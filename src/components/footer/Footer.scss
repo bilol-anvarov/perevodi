@@ -1,0 +1,104 @@
+@import "../../app/globals.scss";
+
+.footer-inside{
+    width: 100%;
+    max-width: $mx-width;
+    padding: 38px;
+    border-radius: var(--Spacing-xl, 40px);
+    border: var(--Radius-Sharp, 1px) solid var(--Neutrals-Neutrals200, #EDEDED);
+    gap: 4px;
+    margin: 0 auto;
+    background: var(--Base-Base-White, #FFF);
+    .ads{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .topBlocks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .footer-content{
+            display: flex;
+            padding: 1px 0;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            .adress-box {
+                display: flex;
+                flex-direction: column;
+                gap: var(--Spacing-m, 14px);
+                .adressCtr {
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    color: #000;
+                    font-size: 16px;
+                    font-weight: 400;
+
+                }
+            }
+        }
+        .footer-links {
+            display: flex;
+            align-items: flex-start;
+            gap: var(--Radius-ml, 32px);
+            .linksCtr {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 24px;
+                a {
+                    color: #000;
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+    .bottomBlock span,
+    .bottomBlock a {
+        font-size: 14px;
+        color: var(--Neutrals-Neutrals900, #AEAEAE);
+        font-weight: 600;
+    }
+}
+
+footer{
+    padding: 0 10px 85px;
+    margin-top: 52px;
+    span,
+    a{
+        color: #808080;
+        font-weight: 400;
+    }
+}
+@media (max-width: 800px) {
+    footer .footer-inside{
+        gap: 24px;
+        .topBlocks {
+            align-items: center;
+            flex-direction: column;
+            gap: 24px;
+            .footer-content {
+                align-items: center;
+            }
+            .footer-links {
+                flex-direction: column;
+                gap: 24px;
+                align-items: center;
+                .linksCtr {
+                    align-items: center;
+                    gap: 24px;
+                }
+            }
+        }
+        .bottomBlock {
+            flex-direction: column;
+            gap: 10px;
+            text-align: center;
+            align-items: center;
+
+        }
+    }
+}

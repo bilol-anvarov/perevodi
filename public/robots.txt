@@ -1,0 +1,16 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /register/
+Disallow: /user-profile/
+Disallow: /checkout/
+Disallow: /cart/
+
+Allow: /$
+Allow: /news$
+Allow: /loyalty$
+Allow: /promotions$
+Allow: /products$
+Allow: /contacts$
+
+Sitemap: https://makromarket.uz/sitemap.xml
