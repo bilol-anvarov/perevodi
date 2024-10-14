@@ -29,7 +29,8 @@ section.questions {
             background: var(--Neutral-100, #FFF);
             .topCtr {
                 display: flex;
-                width: 1197.786px;
+                // width: 1197.786px;
+                width: 100%;
                 justify-content: space-between;
                 align-items: center;
                 h4 {
