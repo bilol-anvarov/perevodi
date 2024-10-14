@@ -1,0 +1,60 @@
+@import '../../app/globals.scss';
+
+
+
+#getToys {
+    width: 100%;
+    max-width: $mx-width;
+    padding: 0 10px;
+    margin: 100px auto;
+    scroll-margin-block-start: 150px;
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px 24px;
+        .card {
+            width: 100%;
+            max-width: 624px;
+            padding: var(--Spacing-ml, 20px) 30px;
+            display: flex;
+            flex-direction: column;
+            gap: var(--Spacing-sm, 10px);
+            border-radius: 42px;
+            background: #F9F5EC;
+            .CardHeading {
+                display: flex;
+                align-items: center;
+                gap: var(--Spacing-ml, 20px);
+                .number {
+                    display: flex;
+                    padding: 15px 24px;
+                    justify-content: center;
+                    align-items: center;
+                    gap: var(--Spacing-sm, 10px);
+                    border-radius: 49px;
+                    background: #105A25;
+                    width: 60px;
+                    height: 46px;
+                    font-size: 24px;
+                    color: #F4ECD9;
+                    font-weight: 600;
+                }
+                h4 {
+                    font-size: 26px;
+                    font-weight: 600;
+                }
+            }
+            .descr {
+                font-size: 26px;
+                font-weight: 400;
+
+            }
+        }
+    }
+    .title {
+        width: 100%;
+        max-width: 500px;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+}

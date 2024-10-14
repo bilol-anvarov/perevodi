@@ -1,0 +1,32 @@
+@import '../../app/globals.scss';
+
+
+.scroll-container {
+    width: 100%; /* Задаем ширину контейнера */
+    overflow: hidden; /* Скрываем всё, что выходит за пределы контейнера */
+    position: relative;
+    margin-top: 100px;
+    .slick-slide{
+    //     width: 300px !important;
+    //     height: 300px !important;
+        // width: 250px !important;
+    }
+    .sliderImg {
+        // width: 300px !important;
+        height: 376px !important;
+        width: 250px;
+        object-fit: cover;
+        // width: 100%;
+    }
+    .title{
+        width: 100%;
+        max-width: 1060px;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+  }
+  
+  .scroll-content {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+  }

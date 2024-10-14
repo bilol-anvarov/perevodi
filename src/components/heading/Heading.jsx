@@ -6,10 +6,10 @@ export default function Heading() {
 
 
   return (
-    <div className="heading">
+    <section className="heading">
         <div className="heading-inside">
             <HeadingInfo />
         </div>
-    </div>
+    </section>
   );
 }

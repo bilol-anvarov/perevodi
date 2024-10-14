@@ -25,6 +25,48 @@
     "sectionFive": {
       "title": "Помоги друзьям вернуться на свою любимую ферму, собрав полную коллекцию зверят!"
     },
+    "conditions": {
+      "title": "Получайте игрушки в подарок за покупки",
+      "card1": {
+        "title": "Текст с условием номер 1",
+        "descr": "Длинное описание условия акции, желательно чтобы текст заполнял все строки."
+      },
+      "card2": {
+        "title": "Текст с условием номер 2",
+        "descr": "Длинное описание условия акции, желательно чтобы текст заполнял все строки."
+      },
+      "card3": {
+        "title": "Текст с условием номер 3",
+        "descr": "Длинное описание условия акции, желательно чтобы текст заполнял все строки."
+      },
+      "card4": {
+        "title": "Текст с условием номер 4",
+        "descr": "Длинное описание условия акции, желательно чтобы текст заполнял все строки."
+      }
+    },
+    "questions": {
+      "title": "Вопросы и ответы",
+      "card1": {
+        "title": "What is Webflow and why is it the best website builder?",
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      "card2": {
+        "title": "What is your favorite template from BRIX Templates?",
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      "card3": {
+        "title": "How do you clone a Webflow Template from the Showcase?",
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      },
+      "card4": {
+        "title": "Why is BRIX Templates the best Webflow agency out there?",
+        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      }
+    },
+    "history": {
+      "title": "История игрушек",
+      "more": "Узнать больше"
+    },
     "map": {
       "title": "Карта",
       "description": "Цены и ассортимент зависят от выбранного магазина",

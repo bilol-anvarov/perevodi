@@ -1,6 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+h2 {
+  color: #105A25;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+}
+@media (max-width: 576px) {
+  h2 {
+    font-size: 14px;
+  }
+}
+
 header {
   padding: 20px 10px;
   position: fixed;
@@ -187,6 +199,11 @@ header nav.mobile {
   header .header_inside {
     position: relative;
     z-index: 200;
+  }
+  header nav.mobile {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
   header nav.desktop {
     gap: 10px !important;

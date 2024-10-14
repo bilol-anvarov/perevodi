@@ -152,8 +152,10 @@ header{
       position: relative;
       z-index: 200;
     }
+    nav.mobile{
+      display: flex !important;
+    }
     nav.desktop {
-      
       gap: 10px !important;
       .menu{
         // border: none !important;

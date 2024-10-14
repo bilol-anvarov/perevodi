@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+h2 {
+  color: #105A25;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+}
+@media (max-width: 576px) {
+  h2 {
+    font-size: 14px;
+  }
+}
+
+#getToys {
+  width: 100%;
+  max-width: 1292px;
+  padding: 0 10px;
+  margin: 100px auto;
+  scroll-margin-block-start: 150px;
+}
+#getToys .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 24px 24px;
+}
+#getToys .cards .card {
+  width: 100%;
+  max-width: 624px;
+  padding: var(--Spacing-ml, 20px) 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: var(--Spacing-sm, 10px);
+  border-radius: 42px;
+  background: #F9F5EC;
+}
+#getToys .cards .card .CardHeading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: var(--Spacing-ml, 20px);
+}
+#getToys .cards .card .CardHeading .number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px 24px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: var(--Spacing-sm, 10px);
+  border-radius: 49px;
+  background: #105A25;
+  width: 60px;
+  height: 46px;
+  font-size: 24px;
+  color: #F4ECD9;
+  font-weight: 600;
+}
+#getToys .cards .card .CardHeading h4 {
+  font-size: 26px;
+  font-weight: 600;
+}
+#getToys .cards .card .descr {
+  font-size: 26px;
+  font-weight: 400;
+}
+#getToys .title {
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin: 0 auto 30px;
+}

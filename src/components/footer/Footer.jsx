@@ -26,7 +26,7 @@ export default function Footer(){
                         <Link href={'/'} className="log">
                             <img src="/green logo.svg" alt="" />
                         </Link>
-                        <div className="adress-box flex flex-col">
+                        {/* <div className="adress-box flex flex-col">
                             <Link href={'#!'} className="adressCtr">
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@ export default function Footer(){
 
                                 Телефон: +998 (99) 099-19-99
                             </Link>
-                        </div>
+                        </div> */}
                     </div>
                     <div className="footer-links">
                         <div className="linksCtr">

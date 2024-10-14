@@ -1,6 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+h2 {
+  color: #105A25;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 120%; /* 38.4px */
+}
+@media (max-width: 576px) {
+  h2 {
+    font-size: 14px;
+  }
+}
+
 section.map {
   width: 100%;
   max-width: 1292px;
