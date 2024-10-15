@@ -21,10 +21,16 @@ h2 {
   margin-top: 100px;
 }
 .scroll-container .sliderImg {
-  height: 376px !important;
+  height: 376px;
   width: 250px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media (max-width: 576px) {
+  .scroll-container .sliderImg {
+    height: 189px !important;
+    width: 100% !important;
+  }
 }
 .scroll-container .title {
   width: 100%;

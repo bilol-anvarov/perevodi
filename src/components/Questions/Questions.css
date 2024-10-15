@@ -61,6 +61,12 @@ section.questions .cards .card {
   border: var(--Radius-Sharp, 2px) solid rgba(76, 184, 72, 0.35);
   background: var(--Neutral-100, #FFF);
 }
+@media (max-width: 576px) {
+  section.questions .cards .card {
+    padding: var(--Spacing-ml, 20px);
+    border-radius: 32px;
+  }
+}
 section.questions .cards .card .topCtr {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -80,6 +86,12 @@ section.questions .cards .card .topCtr h4 {
   font-weight: 600;
   line-height: 28px; /* 127.273% */
 }
+@media (max-width: 576px) {
+  section.questions .cards .card .topCtr h4 {
+    max-width: 270px;
+    font-size: 16px;
+  }
+}
 section.questions .cards .card .topCtr .arrow {
   -webkit-transition: -webkit-transform 0.3s ease;
   transition: -webkit-transform 0.3s ease;
@@ -87,6 +99,12 @@ section.questions .cards .card .topCtr .arrow {
   transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
+}
+@media (max-width: 576px) {
+  section.questions .cards .card .topCtr .arrow {
+    width: 35px;
+    height: 35px;
+  }
 }
 section.questions .cards .card .topCtr .arrow circle {
   fill: #FFFFFF;
@@ -119,6 +137,11 @@ section.questions .cards .card .bottomCtr p {
   font-weight: 400;
   font-size: 18px;
   padding-top: 10px;
+}
+@media (max-width: 576px) {
+  section.questions .cards .card .bottomCtr p {
+    font-size: 14px;
+  }
 }
 section.questions .cards .card .bottomCtr.active {
   max-height: 500px;

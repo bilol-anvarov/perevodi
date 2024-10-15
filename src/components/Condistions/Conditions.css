@@ -43,6 +43,12 @@ h2 {
   border-radius: 42px;
   background: #F9F5EC;
 }
+@media (max-width: 576px) {
+  #getToys .cards .card {
+    border-radius: 32px;
+    padding: 10px 30px;
+  }
+}
 #getToys .cards .card .CardHeading {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -76,9 +82,19 @@ h2 {
   font-size: 26px;
   font-weight: 600;
 }
+@media (max-width: 576px) {
+  #getToys .cards .card .CardHeading h4 {
+    font-size: 18px;
+  }
+}
 #getToys .cards .card .descr {
   font-size: 26px;
   font-weight: 400;
+}
+@media (max-width: 576px) {
+  #getToys .cards .card .descr {
+    font-size: 18px;
+  }
 }
 #getToys .title {
   width: 100%;

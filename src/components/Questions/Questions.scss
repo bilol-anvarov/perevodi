@@ -27,9 +27,12 @@ section.questions {
             border-radius: 42px;
             border: var(--Radius-Sharp, 2px) solid rgba(76, 184, 72, 0.35);
             background: var(--Neutral-100, #FFF);
+            @media (max-width: 576px){
+                padding: var(--Spacing-ml, 20px);
+                border-radius: 32px;
+            }
             .topCtr {
                 display: flex;
-                // width: 1197.786px;
                 width: 100%;
                 justify-content: space-between;
                 align-items: center;
@@ -39,10 +42,18 @@ section.questions {
                     font-style: normal;
                     font-weight: 600;
                     line-height: 28px; /* 127.273% */
+                    @media (max-width: 576px){
+                        max-width: 270px;
+                        font-size: 16px;
+                    }
                 }
                 .arrow {
                     transition: transform 0.3s ease;
                     transform: rotate(-90deg);
+                    @media (max-width: 576px){
+                        width: 35px;
+                        height: 35px;
+                    }
                     circle {
                         fill: #FFFFFF;
                         transition: all .3s ease-in-out;
@@ -72,6 +83,9 @@ section.questions {
                     font-weight: 400;
                     font-size: 18px;
                     padding-top: 10px;
+                    @media (max-width: 576px){
+                        font-size: 14px;
+                    }
                 }
                 &.active {
                     max-height: 500px;
