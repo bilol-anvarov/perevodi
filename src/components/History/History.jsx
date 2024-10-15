@@ -74,6 +74,11 @@ export default function History() {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + products.length) % products.length);
   };
 
+  useEffect(()=>{
+    if(!isPopup) {
+        document.body.style.overflow = "";
+    }
+  },[isPopup])
 
   console.log(products)
   return (
