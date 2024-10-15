@@ -47,25 +47,29 @@
     "questions": {
       "title": "Вопросы и ответы",
       "card1": {
-        "title": "What is Webflow and why is it the best website builder?",
-        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "title": "“Ahil ferma” nima?",
+        "descr": "Ahil ferma – bu Makro tarmog‘i supermarketlarida o‘tkazilayotgan aksiya. Qiymati 60 ming so‘mdan boshlanadigan xarid uchun “Ahil Ferma” to‘plamidan bitta o‘yinchoq taqdim etiladi. Jami bo‘lib to‘plam 23 ta qahramon-o‘yinchoqdan iborat."
       },
       "card2": {
-        "title": "What is your favorite template from BRIX Templates?",
-        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "title": "Aksiyani o‘tkazish muddatlari?",
+        "descr": "Aksiya 2024-yil 21-oktyabrdan 2024-yil 15-dekabrgacha o‘tkaziladi."
       },
       "card3": {
-        "title": "How do you clone a Webflow Template from the Showcase?",
-        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "title": "Ushbu aksiya qaysi Makro supermarketlarida o‘tkazilmoqda?",
+        "descr": "Aksiya O‘zbekiston Respublikasi hududidagi barcha Makro tarmog‘i supermarketlarida o‘tkazilmoqda."
       },
       "card4": {
-        "title": "Why is BRIX Templates the best Webflow agency out there?",
-        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "title": "O‘yinchoqni qanday bepul olish mumkin?",
+        "descr": "Qiymati 60 ming so‘mdan boshlanadigan xarid uchun o‘yinchoq bepul taqdim etiladi, chekdagi har bir qo‘shimcha 60 ming so‘m uchun qo‘shimcha o‘yinchoq beriladi."
+      },
+      "card5": {
+        "title": "Bitta xarid uchun nechta o‘yinchoq olishim mumkin?",
+        "descr": "Chekdagi har bir 60 ming so‘m uchun bitta o‘yinchoq, ammo bitta xarid uchun ko‘pi bilan 6 ta o‘yinchoq bepul taqdim etiladi."
       }
     },
     "history": {
       "title": "История игрушек",
-      "more": "Узнать больше"
+      "more": "Kopro bilish"
     },
     "map": {
       "title": "Xarita",

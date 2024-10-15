@@ -15,6 +15,7 @@ export default function Questions() {
             <QuestionCard question={t('mainPage.questions.card2.title')} answer={t('mainPage.questions.card2.descr')} />
             <QuestionCard question={t('mainPage.questions.card3.title')} answer={t('mainPage.questions.card3.descr')} />
             <QuestionCard question={t('mainPage.questions.card4.title')} answer={t('mainPage.questions.card4.descr')} />
+            <QuestionCard question={t('mainPage.questions.card5.title')} answer={t('mainPage.questions.card5.descr')} />
         </div>
     </section>
   )

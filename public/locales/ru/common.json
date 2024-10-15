@@ -47,20 +47,24 @@
     "questions": {
       "title": "Вопросы и ответы",
       "card1": {
-        "title": "What is Webflow and why is it the best website builder?",
-        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "title": "Что такое \"Дружная ферма\"?",
+        "descr": "Дружная ферма - это акция, проводимая сетью супермаркетов Makro. При совершении покупок от 60 тысяч сум выдается одна игрушка из коллекции \"Дружная Ферма\". Всего коллекция состоит из 23 песонажей-игрушек."
       },
       "card2": {
-        "title": "What is your favorite template from BRIX Templates?",
-        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "title": "Какие сроки проведения акции?",
+        "descr": "Акция проводится с 21.10.2024 по 15.12.2024"
       },
       "card3": {
-        "title": "How do you clone a Webflow Template from the Showcase?",
-        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "title": "В каких супермаркетах Макро проводится данная акция?",
+        "descr": "Акция проводится во всех супермаркетах сети Макро на территории Республики Узбекистан."
       },
       "card4": {
-        "title": "Why is BRIX Templates the best Webflow agency out there?",
-        "descr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+        "title": "Как получить игрушку бесплатно?",
+        "descr": "При совершении покупки от 60 тысяч сум игрушка выдается бесплатно, за каждые дополнительные 60 тысяч сум в чеке выдается дополнительная игрушка."
+      },
+      "card5": {
+        "title": "Сколько игрушек я могу получить за одну покупку?",
+        "descr": "За каждые 60 тысяч сум в чеке выдается одна игрушка бесплатно, но не более 6 игрушек за одну покупку."
       }
     },
     "history": {
