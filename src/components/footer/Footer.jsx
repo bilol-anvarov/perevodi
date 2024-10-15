@@ -84,15 +84,15 @@ export default function Footer(){
                     </div>
                     <div className="footer-links">
                         <div className="linksCtr">
-                            <Link href={'#getToys'}>Получить игрушки</Link>
-                            <Link href={'#history'}>История жителей фермы</Link>
+                            <Link href={'#getToys'}>{t('footer.getToys')}</Link>
+                            <Link href={'#history'}>{t('footer.history')}</Link>
                         </div>
                         <div className="linksCtr">
-                            <Link href={'#conditions'}>Условия акции</Link>
-                            <Link href={'#contacts'}>Контакты</Link>
+                            <Link href={'#conditions'}>{t('footer.conditions')}</Link>
+                            <Link href={'#contacts'}>{t('footer.contacts')}</Link>
                         </div>
                         <div className="linksCtr">
-                            <Link href={'#rights'}>Права и условия</Link>
+                            <Link href={'#rights'}>{t('footer.rights')}</Link>
                         </div>
                     </div>
                 </div>

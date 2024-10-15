@@ -1,51 +1,51 @@
 {
   "header": {
-      "getToys": "Получить игрушки",
-      "conditions": "Условия акции",
-      "history": "История жителей фермы",
-      "contacts": "Контакты"
+      "getToys": "O‘yinchoqlarni olish",
+      "conditions": "Aksiya shartlari",
+      "history": "Ferma aholisi tarixi",
+      "contacts": "Kontaktlar"
   },
   "mainPage": {
     "heading":{
-      "headingText": "Дарим игрушки за покупки!",
-      "description": "Соберите уникальную коллекцию совершая покупки в Макро от 60 тыс. сум.",
-      "participate": "Участвовать",
-      "free": "Бесплатно",
+      "headingText": "Xaridlar uchun  o‘yinchoqlar sovg‘a qilamiz!",
+      "description": "Makroda 60 ming so‘mdan boshlab xaridlar qilib, noyob kolleksiya to‘plang.",
+      "participate": "Ishtirok etish",
+      "free": "Bepul",
       "dates": "21.10 - 15.12.2024"
     },
     "sectionTwo": {
-      "title": "Далеко-далеко, в прекрасной солнечной стране, жили зверята-фермерята."
+      "title": "Uzoq-uzoqlarda, go‘zal, serquyosh mamlakatda jonivor-fermerlar yashar edilar."
     },
     "sectionThree": {
-      "title": "Они построили замечательную ферму, где дружно работали и отдыхали вместе."
+      "title": "Ular birgalikda ishlash va dam olish uchun ajoyib ferma qurishdi."
     },
     "sectionFour": {
-      "title": "Но однажды поднялся сильнейший ураган, поднял всех жителей фермы в воздух и разбросал их по всему миру."
+      "title": "Ammo bir kuni kuchli dovul ko‘tarilib, fermaning barcha aholisini osmonga uchirib yubordi va ularni butun dunyoga sochib yubordi."
     },
     "sectionFive": {
-      "title": "Помоги друзьям вернуться на свою любимую ферму, собрав полную коллекцию зверят!"
+      "title": "To‘liq hayvonot kolleksiyasini to‘plab, do‘stlarga sevimli fermalariga qaytishlariga yordam bering!"
     },
     "conditions": {
-      "title": "Получайте игрушки в подарок за покупки",
+      "title": "Xaridlar uchun sovg‘aga o‘yinchoqlar oling",
       "card1": {
-        "title": "Текст с условием номер 1",
-        "descr": "Длинное описание условия акции, желательно чтобы текст заполнял все строки."
+        "title": "1-son shartli matn",
+        "descr": "Aksiya shartlarining uzun tavsifi, matn imkon qadar barcha satrlarni to‘ldirib turishi kerak"
       },
       "card2": {
-        "title": "Текст с условием номер 2",
-        "descr": "Длинное описание условия акции, желательно чтобы текст заполнял все строки."
+        "title": "2-son shartli matn",
+        "descr": "Aksiya shartlarining uzun tavsifi, matn imkon qadar barcha satrlarni to‘ldirib turishi kerak"
       },
       "card3": {
-        "title": "Текст с условием номер 3",
-        "descr": "Длинное описание условия акции, желательно чтобы текст заполнял все строки."
+        "title": "3-son shartli matn",
+        "descr": "Aksiya shartlarining uzun tavsifi, matn imkon qadar barcha satrlarni to‘ldirib turishi kerak"
       },
       "card4": {
-        "title": "Текст с условием номер 4",
-        "descr": "Длинное описание условия акции, желательно чтобы текст заполнял все строки."
+        "title": "4-son shartli matn",
+        "descr": "Aksiya shartlarining uzun tavsifi, matn imkon qadar barcha satrlarni to‘ldirib turishi kerak"
       }
     },
     "questions": {
-      "title": "Вопросы и ответы",
+      "title": "Savollar va javoblar",
       "card1": {
         "title": "“Ahil ferma” nima?",
         "descr": "Ahil ferma – bu Makro tarmog‘i supermarketlarida o‘tkazilayotgan aksiya. Qiymati 60 ming so‘mdan boshlanadigan xarid uchun “Ahil Ferma” to‘plamidan bitta o‘yinchoq taqdim etiladi. Jami bo‘lib to‘plam 23 ta qahramon-o‘yinchoqdan iborat."
@@ -79,6 +79,11 @@
   },
   "footer": {
     "adress": "Адрес: Lorem ipsum dolor sit",
-    "phone": "Телефон: +998 (99) 099-19-99"
+    "phone": "Телефон: +998 (99) 099-19-99",
+    "getToys": "O‘yinchoqlarni olish",
+    "conditions": "Aksiya shartlari",
+    "history": "Ferma aholisi tarixi",
+    "contacts": "Kontaktlar",
+    "rights": "Huquqlar va shartlar"
   } 
 }

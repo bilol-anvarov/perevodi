@@ -74,12 +74,12 @@ export default function History() {
                     </svg>
                 </button>
 
-                <motion.div
-                    key={currentIndex}
-                    initial={{ opacity: 0, x: 0 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: 0 }}
-                    transition={{ duration: 0.5 }}
+                    <motion.div
+                        key={currentIndex}
+                        initial={{ opacity: 0, x: 100 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: -100 }}
+                        transition={{ duration: 0.5 }}
                     >
                     <div className="imgCtr">
                         <img src={products[currentIndex]?.picture} alt={products[currentIndex]?.name} />
@@ -103,8 +103,13 @@ export default function History() {
                         />
                     </svg>
 
-            </button>
-                    </div>
+                </button>
+            </div>
+            {activeLan === "uz" ? (
+            <div className="role">{products[currentIndex]?.role_uz}</div>
+          ) : (
+            <div className="role">{products[currentIndex]?.role_ru}</div>
+          )}
         </div>
       </div>
     </section>
