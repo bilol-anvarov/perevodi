@@ -15,11 +15,50 @@ async function fetchBranch({ activeLan }) {
   return response.data;
 }
 
+
+
+const Popup = ({product, setIsPopup, activeLan}) => {
+    document.body.style.overflow = "hidden";
+    console.log(product)
+    if(!product) return null
+    return (
+        <div className="popup">
+            <div className="closeBtn fixed top-[100px] right-[70px]" onClick={()=>{setIsPopup(false)}}>X</div>
+            <div className="popupInside">
+            {activeLan === "uz" ? (
+                <h2 className="mb-[20px]">{product.name_uz}</h2>
+            ) : (
+                <h2 className="mb-[20px]">{product.name_ru}</h2>
+            )}
+            {activeLan === "uz" ? (
+                <p>{product.description_uz}</p>
+            ) : (
+                <p>{product.description_ru}</p>
+            )}
+            <br />
+            {activeLan === "uz" ? (
+                <p>{product.facts_uz}</p>
+            ) : (
+                <p>{product.facts_ru}</p>
+            )}
+            <br />
+            {activeLan === "uz" ? (
+                <p>{product.short_description_uz}</p>
+            ) : (
+                <p>{product.short_description_ru}</p>
+            )}
+
+            </div>
+        </div>
+    )
+}
+
 export default function History() {
   const { activeLan } = useMainContext();
   const { t } = useTranslation();
   const [products, setData] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isPopup, setIsPopup] = useState(false)
 
   useEffect(() => {
     fetchBranch(activeLan).then(info => {
@@ -35,23 +74,50 @@ export default function History() {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + products.length) % products.length);
   };
 
+
+  console.log(products)
   return (
+    <>
     <section id='history'>
       <h2 className="title">{t('mainPage.history.title')}</h2>
       <div className="mainCtr">
         <div className="info">
+            <motion.div
+                key={currentIndex}
+                initial={{ opacity: 0, x: 5 }}
+                animate={{ opacity: 1, x: 0 }}
+                exit={{ opacity: 0, x: -5 }}
+                transition={{ duration: 0.5 }}
+            >
           {activeLan === "uz" ? (
-            <h3>{products[currentIndex]?.name_uz}</h3>
+            <h3 className="mb-[20px]">{products[currentIndex]?.name_uz}</h3>
           ) : (
-            <h3>{products[currentIndex]?.name_ru}</h3>
+            <h3 className="mb-[20px]">{products[currentIndex]?.name_ru}</h3>
           )}
           {activeLan === "uz" ? (
             <p>{products[currentIndex]?.description_uz}</p>
           ) : (
             <p>{products[currentIndex]?.description_ru}</p>
           )}
-          <button type="button">
+            </motion.div>
+          <button type="button" onClick={()=>{setIsPopup(true)}}>
             {t('mainPage.history.more')}
+                <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={14}
+                    height={11}
+                    viewBox="0 0 14 11"
+                    fill="none"
+                >
+                <path
+                    d="M1.66663 5.5H12.3333M12.3333 5.5L8.33329 1.5M12.3333 5.5L8.33329 9.5"
+                    stroke="#F4ECD9"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                />
+                </svg>
+
           </button>
         </div>
         <div className="island">
@@ -86,20 +152,20 @@ export default function History() {
 
                     </div>
                 </motion.div>
-            <button className={`slider-arrow ${currentIndex === products.length ? 'disabled' : ''}`} onClick={handleNext}>
+                <button className={`slider-arrow ${currentIndex === products.length ? 'disabled' : ''}`} onClick={handleNext}>
                     <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width={16}
-                    height={16}
-                    viewBox="0 0 16 16"
-                    fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                        width={16}
+                        height={16}
+                        viewBox="0 0 16 16"
+                        fill="none"
                     >
-                    <path
-                        d="M2.66669 8H13.3334M13.3334 8L9.33335 4M13.3334 8L9.33335 12"
-                        stroke="#F4ECD9"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
+                         <path
+                            d="M2.66669 8H13.3334M13.3334 8L9.33335 4M13.3334 8L9.33335 12"
+                            stroke="#F4ECD9"
+                            strokeWidth="1.5"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
                         />
                     </svg>
 
@@ -113,5 +179,8 @@ export default function History() {
         </div>
       </div>
     </section>
+    {isPopup && <Popup product={products[currentIndex]} activeLan={activeLan}setIsPopup={setIsPopup}/>}
+
+      </>
   );
 }

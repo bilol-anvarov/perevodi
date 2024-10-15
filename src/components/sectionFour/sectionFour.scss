@@ -6,9 +6,13 @@
     overflow: hidden; /* Скрываем всё, что выходит за пределы контейнера */
     position: relative;
     margin-top: 100px;
-
+    .slick-slide{
+    //     width: 300px !important;
+    //     height: 300px !important;
+        // width: 250px !important;
+    }
     .sliderImg {
-        height: 376px;
+        height: 376px !important;
         width: 250px;
         object-fit: cover;
         @media (max-width: 576px){
