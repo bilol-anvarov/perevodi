@@ -10,24 +10,25 @@ gsap.registerPlugin(ScrollTrigger);
 export default function Questions() {
     const { t } = useTranslation()
     
-  useEffect(() => {
-    const sections = document.querySelectorAll('.fade-in-section');
+  // useEffect(() => {
+  //   const sections = document.querySelectorAll('.fade-in-section');
 
-    sections.forEach(section => {
-      gsap.fromTo(section, 
-        { opacity: 0, y: 50 }, // начальное состояние
-        {
-          opacity: 1,
-          y: 0,
-          scrollTrigger: {
-            trigger: section,
-            start: 'top 90%', // когда верх секции достигает 80% высоты окна
-            toggleActions: 'play none none reverse', // анимация будет воспроизводиться при скролле
-          },
-        }
-      );
-    });
-  }, []);
+  //   sections.forEach(section => {
+  //     gsap.fromTo(section, 
+  //       { opacity: 0, y: 50 }, // начальное состояние
+  //       {
+  //         opacity: 1,
+  //         y: 0,
+  //         scrollTrigger: {
+  //           trigger: section,
+  //           start: 'top 90%', // когда верх секции достигает 80% высоты окна
+  //           toggleActions: 'play none none reverse', // анимация будет воспроизводиться при скролле
+  //           once: true,
+  //         },
+  //       }
+  //     );
+  //   });
+  // }, []);
 
 
 

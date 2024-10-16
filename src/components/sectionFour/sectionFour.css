@@ -18,6 +18,11 @@ h2 {
   display: none;
 }
 
+.fade-in-section {
+  -webkit-transform: translate(0px, 50px);
+          transform: translate(0px, 50px);
+}
+
 .scroll-container {
   width: 100%; /* Задаем ширину контейнера */
   overflow: hidden; /* Скрываем всё, что выходит за пределы контейнера */

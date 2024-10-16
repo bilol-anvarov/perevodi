@@ -31,7 +31,7 @@ export default function SectionFour() {
   const { t } = useTranslation();
   
     return (
-      <div className="scroll-container">
+      <div className="scroll-container fade-in-section opacity-0">
         <h2 className="title">{t('mainPage.sectionFive.title')}</h2>
         <div className="scroll-content">
             <Slider {...settings}>

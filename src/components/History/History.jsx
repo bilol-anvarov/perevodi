@@ -109,7 +109,7 @@ export default function History() {
 
   return (
     <>
-    <section id='history'>
+    <section id='history' className="fade-in-section opacity-0">
       <h2 className="title">{t('mainPage.history.title')}</h2>
       <div className="mainCtr">
         <div className="info">

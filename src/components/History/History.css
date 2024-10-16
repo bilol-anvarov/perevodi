@@ -17,6 +17,11 @@ h2 {
   display: none;
 }
 
+.fade-in-section {
+  -webkit-transform: translate(0px, 50px);
+          transform: translate(0px, 50px);
+}
+
 #history {
   width: 100%;
   max-width: 1292px;
@@ -164,6 +169,7 @@ h2 {
   height: 370px;
 }
 #history .mainCtr .island .slider {
+  min-height: 360px;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
