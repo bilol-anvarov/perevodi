@@ -112,7 +112,8 @@ export default function Footer(){
                         </div>
                     </div>
                 </div>
-                <div className="centerBlock flex justify-center">
+                <div className="centerBlock flex justify-center flex-col items-center gap-1 mt-2">
+                    <div className=" ">{t('footer.socials')}</div>
                     <div className="socials-links max-w-52">
                         <ul className="flex gap-3 justify-center">
                             <li>
