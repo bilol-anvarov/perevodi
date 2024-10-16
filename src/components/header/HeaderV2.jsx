@@ -82,8 +82,8 @@ export default function Header() {
                   {/* account */}
                   
                   <LinkLayout onClickFunc={closeNavBar} img={'/Cart 4.svg'} name={t('header.getToys')} src='/#getToys'/>
-                  <LinkLayout onClickFunc={closeNavBar} img={'/Ticket Sale mini.svg'} name={t('header.conditions')} src='/#questions'/>
                   <LinkLayout onClickFunc={closeNavBar}  img={'/loyality.svg'} name={t('header.history')} src='/#history'/>
+                  <LinkLayout onClickFunc={closeNavBar} img={'/Ticket Sale mini.svg'} name={t('header.conditions')} src='/#questions'/>
                   <LinkLayout onClickFunc={closeNavBar} img={'/Book Bookmark Minimalistic mini.svg'} name={t('header.contacts')} src='/#shops'/>
                 </ul>
                 {/* burger menu */}
@@ -104,8 +104,8 @@ export default function Header() {
                     {/* account */}
                     
                     <LinkLayout onClickFunc={closeNavBar} img={'/Cart 4.svg'} name={t('header.getToys')} src='/#getToys'/>
-                    <LinkLayout onClickFunc={closeNavBar} img={'/Ticket Sale mini.svg'} name={t('header.conditions')} src='/#questions'/>
                     <LinkLayout onClickFunc={closeNavBar}  img={'/loyality.svg'} name={t('header.history')} src='/#history'/>
+                    <LinkLayout onClickFunc={closeNavBar} img={'/Ticket Sale mini.svg'} name={t('header.conditions')} src='/#questions'/>
                     <LinkLayout onClickFunc={closeNavBar} img={'/Book Bookmark Minimalistic mini.svg'} name={t('header.contacts')} src='/#shops'/>
                   </ul>
             </nav>
