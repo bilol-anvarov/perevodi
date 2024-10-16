@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -270,14 +271,38 @@ h2 {
           align-items: center;
   padding: 0 10px;
 }
+.popup .closeBtnCtr {
+  width: 100%;
+  max-width: 800px;
+  position: fixed;
+  margin: 0 auto;
+  left: 50%;
+  top: 20%; /* Вы можете изменить это значение, если хотите изменить вертикальное положение */
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  top: 20%;
+}
 .popup .closeBtn {
   border: var(--Radius-Sharp, 2px) solid rgba(76, 184, 72, 0.35);
   background-color: #F4ECD9;
-  padding: 14px 22px;
+  padding: 15px 15px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
   border-radius: 999px;
   cursor: pointer;
   font-size: 20px;
   font-weight: 600;
+}
+.popup .closeBtn img {
+  width: 20px;
+  height: 20px;
 }
 .popup .popupInside {
   background-color: #F4ECD9;

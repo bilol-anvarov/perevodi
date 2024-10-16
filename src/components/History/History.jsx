@@ -1,5 +1,5 @@
 'use client'
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef  } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from 'react-i18next';
 import "./History.css";
@@ -18,13 +18,48 @@ async function fetchBranch({ activeLan }) {
 
 
 const Popup = ({product, setIsPopup, activeLan}) => {
-    document.body.style.overflow = "hidden";
-    console.log(product)
-    if(!product) return null
+  const popupRef = useRef(null); // Создаем реф для попапа
+
+    useEffect(() => {
+        document.body.style.overflow = "hidden";
+
+        const handleClickOutside = (event) => {
+            // Если клик был вне попапа, закрыть его
+            if (popupRef.current && !popupRef.current.contains(event.target)) {
+                setIsPopup(false);
+            }
+        };
+
+        // Добавляем обработчик события клика
+        document.addEventListener('mousedown', handleClickOutside);
+
+        return () => {
+            // Убираем обработчик события при размонтировании компонента
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, [setIsPopup]);
+
+    if (!product) return null;
     return (
         <div className="popup">
-            <div className="closeBtn fixed top-[100px] right-[70px]" onClick={()=>{setIsPopup(false)}}>X</div>
-            <div className="popupInside">
+          <div className="closeBtnCtr">
+            <div className="closeBtn" onClick={()=>{setIsPopup(false)}}>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width={22}
+              height={22}
+              viewBox="0 0 22 22"
+              fill="none"
+            >
+              <path
+                d="M2.99979 3.71784e-05C2.74392 3.71784e-05 2.48776 0.0975058 2.29276 0.293006L0.292762 2.29301C-0.0982383 2.68401 -0.0982383 3.31707 0.292762 3.70707L7.58573 11L0.292762 18.293C-0.0982383 18.684 -0.0982383 19.3171 0.292762 19.7071L2.29276 21.7071C2.68376 22.0981 3.31682 22.0981 3.70682 21.7071L10.9998 14.4141L18.2928 21.7071C18.6828 22.0981 19.3168 22.0981 19.7068 21.7071L21.7068 19.7071C22.0978 19.3161 22.0978 18.683 21.7068 18.293L14.4139 11L21.7068 3.70707C22.0978 3.31707 22.0978 2.68301 21.7068 2.29301L19.7068 0.293006C19.3158 -0.0979941 18.6828 -0.0979941 18.2928 0.293006L10.9998 7.58598L3.70682 0.293006C3.51132 0.0975058 3.25567 3.71784e-05 2.99979 3.71784e-05Z"
+                fill="#105A25"
+              />
+            </svg>
+
+            </div>
+          </div>
+            <div className="popupInside" ref={popupRef}>
             {activeLan === "uz" ? (
                 <h2 className="mb-[20px]">{product.name_uz}</h2>
             ) : (

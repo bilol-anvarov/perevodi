@@ -1,9 +1,9 @@
 {
   "header": {
       "getToys": "O‘yinchoqlarni olish",
-      "conditions": "Aksiya shartlari",
+      "conditions": "Savollar va javoblar",
       "history": "Ferma aholisi tarixi",
-      "contacts": "Kontaktlar"
+      "contacts": "Адреса магазиновr"
   },
   "mainPage": {
     "heading":{
@@ -85,9 +85,10 @@
     "adress": "Адрес: Lorem ipsum dolor sit",
     "phone": "Телефон: +998 (99) 099-19-99",
     "getToys": "O‘yinchoqlarni olish",
-    "conditions": "Aksiya shartlari",
+    "conditions": "Savollar va javoblar",
     "history": "Ferma aholisi tarixi",
-    "contacts": "Kontaktlar",
+    "contacts": "Адреса магазиновr",
+    "rules": "Правила акции",
     "rights": "Huquqlar va shartlar"
   } 
 }

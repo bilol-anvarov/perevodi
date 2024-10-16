@@ -2,6 +2,7 @@
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import './Footer.css'
+import { useMainContext } from "@/context/MainContext";
 
 
 function StepLayout({name, icon, img}){
@@ -17,9 +18,14 @@ function StepLayout({name, icon, img}){
 
 
 export default function Footer(){
-    const { t } = useTranslation()
+    
+  const { activeLan } = useMainContext();
+
+
+    const { t, i18n } = useTranslation()
+    console.log(i18n)
     return(
-        <footer className="footer ">
+        <footer className="footer" id="shops">
             <div className="footer-inside mt-[100px] flex flex-col">
                 <div className="topBlocks">
                     <div className="footer-content">
@@ -88,11 +94,21 @@ export default function Footer(){
                             <Link href={'#history'}>{t('footer.history')}</Link>
                         </div>
                         <div className="linksCtr">
-                            <Link href={'#conditions'}>{t('footer.conditions')}</Link>
+                            <Link href={'#questions'}>{t('footer.conditions')}</Link>
                             <Link href={'#contacts'}>{t('footer.contacts')}</Link>
                         </div>
                         <div className="linksCtr">
                             <Link href={'#rights'}>{t('footer.rights')}</Link>
+                            {activeLan == 'ru' ? (
+
+                                <a href={`/oferta_df_ru.pdf`} download>
+                                    {t('footer.rules')}
+                                </a>
+                            ) : (
+                                <a href={`/oferta_df_uz.pdf`} download>
+                                    {t('footer.rules')}
+                                </a>
+                            )}
                         </div>
                     </div>
                 </div>
@@ -111,11 +127,11 @@ export default function Footer(){
                         </ul>
                     </div>
                 </div>
-                <div className="bottomBlock flex justify-center gap-2.5">
+            </div>
+            <div className="bottomBlock flex justify-center gap-2.5">
                     <span>@2024. All Rights Reserved.</span>
                     <Link target="_blank" href={'https://abexlab.com'} className="flex">Design & Dev by <span className="ml-1 underline text-center">AbexLab</span></Link>
                 </div>
-            </div>
         </footer>
     )
 }

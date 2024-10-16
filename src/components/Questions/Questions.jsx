@@ -33,7 +33,7 @@ export default function Questions() {
 
 
   return (
-    <section className='questions'>
+    <section className='questions' id='questions'>
         <h2 className="title">{t('mainPage.questions.title')}</h2>
         <div className="cards">
             <QuestionCard question={t('mainPage.questions.card1.title')} answer={t('mainPage.questions.card1.descr')} />

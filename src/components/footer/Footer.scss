@@ -56,16 +56,19 @@
             }
         }
     }
-    .bottomBlock span,
-    .bottomBlock a {
-        font-size: 14px;
-        color: var(--Neutrals-Neutrals900, #AEAEAE);
-        font-weight: 600;
-    }
+}
+.bottomBlock span,
+.bottomBlock a {
+    font-size: 14px;
+    color: var(--Neutrals-Neutrals900, #AEAEAE);
+    font-weight: 600;
+}
+.bottomBlock {
+    margin-top: 20px;
 }
 
 footer{
-    padding: 0 10px 85px;
+    padding: 0 10px 25px;
     margin-top: 52px;
     span,
     a{

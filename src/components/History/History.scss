@@ -178,14 +178,32 @@
     display: flex;
     align-items: center;
     padding: 0 10px;
+    .closeBtnCtr {
+        width: 100%;
+        max-width: 800px;
+        position: fixed;
+        margin: 0 auto;
+        left: 50%;
+    top: 20%; /* Вы можете изменить это значение, если хотите изменить вертикальное положение */
+    transform: translateX(-50%);
+        display: flex;
+        justify-content: end;
+        // right: 50%;
+        top: 20%;
+    }
     .closeBtn {
         border: var(--Radius-Sharp, 2px) solid rgba(76, 184, 72, 0.35);
         background-color: #F4ECD9;
-        padding: 14px 22px;
+        padding: 15px 15px;
+        width: min-content; 
         border-radius: 999px;
         cursor: pointer;
         font-size: 20px;
         font-weight: 600;
+        img {
+            width: 20px;
+            height: 20px;
+        }
     }
     .popupInside{
         background-color: #F4ECD9;
