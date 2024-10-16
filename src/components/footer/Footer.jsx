@@ -98,7 +98,6 @@ export default function Footer(){
                             <Link href={'#contacts'}>{t('footer.contacts')}</Link>
                         </div>
                         <div className="linksCtr">
-                            <Link href={'#rights'}>{t('footer.rights')}</Link>
                             {activeLan == 'ru' ? (
 
                                 <a href={`/oferta_df_ru.pdf`} download>
