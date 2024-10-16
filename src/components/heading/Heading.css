@@ -13,6 +13,10 @@ h2 {
   }
 }
 
+.nav-icon {
+  display: none;
+}
+
 section.heading {
   width: 100%;
   max-width: 1440px;

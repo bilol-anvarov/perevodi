@@ -13,6 +13,10 @@ h2 {
   }
 }
 
+.nav-icon {
+  display: none;
+}
+
 section.map {
   width: 100%;
   max-width: 1292px;

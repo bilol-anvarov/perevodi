@@ -9,7 +9,7 @@ export default function QuestionCard({question, answer}) {
     
 
     return (
-        <div onClick={()=>{setIsOpen(!isOpen)}} className={`card`}>
+        <div onClick={()=>{setIsOpen(!isOpen)}} className={`card opacity-0 fade-in-section`}>
             <div className="topCtr">
                 <h4>{question}</h4>
                 <svg

@@ -81,6 +81,32 @@ export default function History() {
   },[isPopup])
 
   console.log(products)
+
+
+
+
+  useEffect(() => {
+    const dots = document.querySelectorAll('.dot');
+
+    dots.forEach(dot => {
+        // Задаем случайное начальное положение
+        dot.style.top = `${Math.random() * 100}vh`;
+        dot.style.left = `${Math.random() * 100}vw`;
+  
+        // Устанавливаем случайную скорость и направление движения
+        const moveX = Math.random() * 2000 - 1000; // Случайное значение по X (-100 до 100)
+        const moveY = Math.random() * 2000 - 1000; // Случайное значение по Y (-100 до 100)
+        const duration = Math.random() * 40 + 20; // Случайная длительность анимации (3-8 сек)
+  
+        // Применяем уникальные значения анимации для каждой точки
+        dot.style.setProperty('--moveX', `${moveX}px`);
+        dot.style.setProperty('--moveY', `${moveY}px`);
+        dot.style.setProperty('--duration', `${duration}s`);
+      });
+  }, []);
+
+
+
   return (
     <>
     <section id='history'>
@@ -181,6 +207,11 @@ export default function History() {
           ) : (
             <div className="role">{products[currentIndex]?.role_ru}</div>
           )}
+        </div>
+        <div className="dotsCtr">
+            {Array.from({ length: 100 }).map((_, i) => (
+                <span key={i} className="dot"></span>
+            ))}
         </div>
       </div>
     </section>
