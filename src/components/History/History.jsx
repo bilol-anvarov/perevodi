@@ -87,7 +87,7 @@ const Popup = ({product, setIsPopup, activeLan}) => {
               </div>
               {activeLan === "uz" ? (
                 <div className="role mb-[15px]">{product.role_uz}</div>
-              ) : (
+            ) : (
                 <div className="role mb-[15px]">{product.role_ru}</div>
               )}
             {activeLan === "uz" ? (

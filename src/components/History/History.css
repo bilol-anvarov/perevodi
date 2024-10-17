@@ -330,6 +330,11 @@ section {
   padding: 30px 20px 30px 57px;
   margin: 0 auto;
 }
+@media (max-width: 576px) {
+  .popup .popupInside {
+    padding: 20px 15px;
+  }
+}
 
 @-webkit-keyframes move {
   0% {
