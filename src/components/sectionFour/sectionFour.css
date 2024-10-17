@@ -54,7 +54,7 @@ section {
 @media (max-width: 576px) {
   .scroll-container .sliderImgCtr {
     height: 189px !important;
-    width: 100% !important;
+    width: 100px !important;
   }
 }
 .scroll-container .title {
