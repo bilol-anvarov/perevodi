@@ -6,7 +6,7 @@ section.map{
     overflow: hidden;
     // padding: 0 10px 0 0;
     margin-top: 22px !important;
-    margin: 0 auto;
+    margin: 0 auto 0;
     background-color: #FAFAFA;
     border-radius: 10px;
     display: flex;
@@ -77,6 +77,8 @@ section.map{
 .card-addres{
     color: black;
 }
+
+
 
 .cities{
     box-shadow: 0px 2px 4px 0px rgba(31, 41, 55, 0.06), 0px 4px 6px 0px rgba(31, 41, 55, 0.10);

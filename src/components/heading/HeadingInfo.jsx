@@ -12,7 +12,7 @@ export default function HeadingInfo() {
             <h1>{t('mainPage.heading.headingText')}</h1>
             <p>{t('mainPage.heading.description')}</p>
             <div className="btnTitle">
-                <Link href="#!">
+                <Link href="#getToys">
                     <span className="btn">
                         {t('mainPage.heading.participate')}
                         <svg
@@ -34,7 +34,7 @@ export default function HeadingInfo() {
                     
                 </Link>
                 <div className="title">
-                    <span className="free">{t('mainPage.heading.free')}</span>
+                    {/* <span className="free">{t('mainPage.heading.free')}</span> */}
                     <span className="date">{t('mainPage.heading.dates')}</span>
                 </div>
             </div>

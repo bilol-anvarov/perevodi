@@ -22,12 +22,20 @@ h2 {
           transform: translate(0px, 50px);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-block-start: 100px;
+}
+
 section.map {
   width: 100%;
   max-width: 1292px;
   overflow: hidden;
   margin-top: 22px !important;
-  margin: 0 auto;
+  margin: 0 auto 0;
   background-color: #FAFAFA;
   border-radius: 10px;
   display: -webkit-box;

@@ -23,11 +23,19 @@ h2 {
           transform: translate(0px, 50px);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-block-start: 100px;
+}
+
 section.questions {
   width: 100%;
   max-width: 1292px;
   padding: 0 10px;
-  margin: 100px auto;
+  margin: 100px auto 0;
 }
 section.questions .title {
   width: 100%;

@@ -43,7 +43,7 @@ const Popup = ({product, setIsPopup, activeLan}) => {
     return (
         <div className="popup">
           <div className="closeBtnCtr">
-            <div className="closeBtn" onClick={()=>{setIsPopup(false)}}>
+            {/* <div className="closeBtn" onClick={()=>{setIsPopup(false)}}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width={22}
@@ -57,14 +57,39 @@ const Popup = ({product, setIsPopup, activeLan}) => {
               />
             </svg>
 
-            </div>
+            </div> */}
           </div>
             <div className="popupInside" ref={popupRef}>
-            {activeLan === "uz" ? (
-                <h2 className="mb-[20px]">{product.name_uz}</h2>
-            ) : (
-                <h2 className="mb-[20px]">{product.name_ru}</h2>
-            )}
+              <div className="name mb-[10px] flex gap-[15px] justify-between">
+                {activeLan === "uz" ? (
+                    <h2>{product.name_uz}</h2>
+                ) : (
+                    <h2>{product.name_ru}</h2>
+                )}
+              <svg
+                  onClick={()=>{setIsPopup(false)}}
+                  className="cursor-pointer w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width={24}
+                  height={24}
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <circle cx={12} cy={12} r={10} stroke="black" strokeWidth="1.41176" />
+                  <path
+                    d="M14.5 9.5L9.5 14.5M9.49998 9.49998L14.5 14.5"
+                    stroke="black"
+                    strokeWidth="1.41176"
+                    strokeLinecap="round"
+                  />
+                </svg>
+
+              </div>
+              {activeLan === "uz" ? (
+                <div className="role mb-[15px]">{product.role_uz}</div>
+              ) : (
+                <div className="role mb-[15px]">{product.role_ru}</div>
+              )}
             {activeLan === "uz" ? (
                 <p>{product.description_uz}</p>
             ) : (
@@ -144,7 +169,7 @@ export default function History() {
 
   return (
     <>
-    <section id='history' className="fade-in-section opacity-0">
+    <section  id='history' className="fade-in-section opacity-0">
       <h2 className="title">{t('mainPage.history.title')}</h2>
       <div className="mainCtr">
         <div className="info">
@@ -237,11 +262,6 @@ export default function History() {
 
                 </button>
             </div>
-            {activeLan === "uz" ? (
-            <div className="role">{products[currentIndex]?.role_uz}</div>
-          ) : (
-            <div className="role">{products[currentIndex]?.role_ru}</div>
-          )}
         </div>
         <div className="dotsCtr">
             {Array.from({ length: 100 }).map((_, i) => (

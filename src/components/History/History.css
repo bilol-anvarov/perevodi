@@ -23,13 +23,22 @@ h2 {
           transform: translate(0px, 50px);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-block-start: 100px;
+}
+
 #history {
   width: 100%;
   max-width: 1292px;
   border-radius: 42px;
-  margin: 0 auto;
+  margin: 0px auto 0;
   position: relative;
   overflow: hidden;
+  padding-top: 100px;
 }
 #history .title {
   text-align: center;
@@ -183,6 +192,13 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 576px) {
+  #history .mainCtr .island .slider {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
 #history .mainCtr .island .slider .imgCtr {
   width: 344px !important;
 }
@@ -205,26 +221,6 @@ h2 {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-}
-#history .mainCtr .island .role {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  padding: var(--Spacing-s, 6px) 12px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: var(--Spacing-sm, 10px);
-  border-radius: 49px;
-  background: #105A25;
-  color: #F4ECD9;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 100%; /* 16px */
 }
 #history .dotsCtr {
   position: absolute;
@@ -254,6 +250,27 @@ h2 {
   -webkit-animation: move var(--duration) linear infinite;
           animation: move var(--duration) linear infinite;
   background-color: #B4D97F;
+}
+
+.role {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: var(--Spacing-s, 6px) 12px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: var(--Spacing-sm, 10px);
+  border-radius: 49px;
+  background: #105A25;
+  color: #F4ECD9;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 16px */
 }
 
 .popup {
@@ -310,7 +327,7 @@ h2 {
   max-width: 800px;
   border: var(--Radius-Sharp, 2px) solid rgba(76, 184, 72, 0.35);
   border-radius: 42px;
-  padding: 30px 57px;
+  padding: 30px 20px 30px 57px;
   margin: 0 auto;
 }
 

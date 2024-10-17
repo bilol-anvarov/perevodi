@@ -108,6 +108,7 @@ export default function Footer(){
                                     {t('footer.rules')}
                                 </a>
                             )}
+                            <Link href={'https://makromarket.uz'} target="_blank">makromarket.uz</Link>
                         </div>
                     </div>
                 </div>
@@ -129,8 +130,8 @@ export default function Footer(){
                 </div>
             </div>
             <div className="bottomBlock flex justify-center gap-2.5">
-                    <span>@2024. All Rights Reserved.</span>
-                    <Link target="_blank" href={'https://abexlab.com'} className="flex">Design & Dev by <span className="ml-1 underline text-center">AbexLab</span></Link>
+                    {/* <span>@2024. All Rights Reserved.</span> */}
+                    <Link target="_blank" href={'https://abexlab.com'} className="flex">{t('footer.abex')}<span className="ml-1 underline text-center">AbexLab</span></Link>
                 </div>
         </footer>
     )

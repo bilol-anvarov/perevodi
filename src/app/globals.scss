@@ -30,3 +30,15 @@
   .fade-in-section {
     transform: translate(0px, 50px);
   }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  section {
+    scroll-margin-block-start: 100px;
+  }
+  // section#history {
+  //   // margin-top: 50px;
+  //   // scroll-margin-block-start: 350px;
+  //   scroll-margin-top: 50vh;
+  // }

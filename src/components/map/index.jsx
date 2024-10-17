@@ -197,10 +197,10 @@ export default function MapIndex() {
 
   return (
     <>
-    <h2 className="title text-center">
+    <h2 className="title map text-center pt-[100px] mb-[20px]" id='shops'>
       {t('mainPage.map.title')}
     </h2>
-     <section className="map fade-in-section opacity-0" id='shops'>
+     <section className="map fade-in-section opacity-0">
         <div className="information relative">
             <div onClick={()=>{setIfOpenCities(item => item = !ifOpenCities)}} className=" justify-between location-name min-h-[45px] flex gap-2.5 items-center cursor-pointer">
               <span className="span max-w-[330px]">

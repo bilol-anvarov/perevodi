@@ -5,10 +5,10 @@
     width: 100%;
     max-width: $mx-width;
     border-radius: 42px;
-    margin: 0 auto;
+    margin: 0px auto 0;
     position: relative;
     overflow: hidden;
-    // padding: 0 10px;
+    padding-top: 100px;
     .title {
         text-align: center;
         margin-bottom: 20px;
@@ -109,6 +109,9 @@
                 width: 100%;
                 justify-content: center;
                 align-items: center;
+                @media (max-width: 576px){
+                    justify-content: space-between;
+                }
                 .imgCtr {
                     width: 344px !important;
                     @media (max-width: 576px){
@@ -126,20 +129,6 @@
                 background: #105A25;
                 width: fit-content;
                 height: fit-content;
-            }
-            .role {
-                display: inline-flex;
-                padding: var(--Spacing-s, 6px) 12px;
-                justify-content: center;
-                align-items: center;
-                gap: var(--Spacing-sm, 10px);
-                border-radius: 49px;
-                background: #105A25;
-                color: #F4ECD9;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 400;
-                line-height: 100%; /* 16px */
             }
         }
     }
@@ -167,6 +156,20 @@
     }
 }
 
+.role {
+    display: inline-flex;
+    padding: var(--Spacing-s, 6px) 12px;
+    justify-content: center;
+    align-items: center;
+    gap: var(--Spacing-sm, 10px);
+    border-radius: 49px;
+    background: #105A25;
+    color: #F4ECD9;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%; /* 16px */
+}
 
 .popup {
     width: 100%;
@@ -184,8 +187,8 @@
         position: fixed;
         margin: 0 auto;
         left: 50%;
-    top: 20%; /* Вы можете изменить это значение, если хотите изменить вертикальное положение */
-    transform: translateX(-50%);
+        top: 20%; /* Вы можете изменить это значение, если хотите изменить вертикальное положение */
+        transform: translateX(-50%);
         display: flex;
         justify-content: end;
         // right: 50%;
@@ -211,7 +214,7 @@
         max-width: 800px;
         border: var(--Radius-Sharp, 2px) solid rgba(76, 184, 72, 0.35);
         border-radius: 42px;
-        padding: 30px 57px;
+        padding: 30px 20px 30px 57px;
         margin: 0 auto;
     }
 }

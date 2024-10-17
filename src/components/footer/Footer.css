@@ -22,6 +22,14 @@ h2 {
           transform: translate(0px, 50px);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin-block-start: 100px;
+}
+
 .footer-inside {
   width: 100%;
   max-width: 1292px;
