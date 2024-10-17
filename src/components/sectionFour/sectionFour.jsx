@@ -40,37 +40,37 @@ export default function SectionFour() {
         <div className="scroll-content">
             <Slider {...settings}>
 
-                {/* <div className="sliderImgCtr"> */}
+                <div className="sliderImgCtr">
                     <MyImg src={'/1 (2).png'}/>
-                {/* </div> */}
-                {/* <div className="sliderImgCtr"> */}
+                </div>
+                <div className="sliderImgCtr">
                     <MyImg src={'/2 (2).png'}/>
-                {/* </div> */}
-                {/* <div className="sliderImgCtr"> */}
+                </div>
+                <div className="sliderImgCtr">
                     <MyImg src={'/3 (2).png'}/>
-                {/* </div> */}
-                {/* <div className="sliderImgCtr"> */}
+                </div>
+                <div className="sliderImgCtr">
                     <MyImg src={'/4 (2).png'}/>
-                {/* </div> */}
-                {/* <div className="sliderImgCtr"> */}
+                </div>
+                <div className="sliderImgCtr">
                     <MyImg src={'/5.png'}/>
-                {/* </div> */}
+                </div>
 
-                {/* <div className="sliderImgCtr"> */}
+                <div className="sliderImgCtr">
                     <MyImg src={'/1 (2).png'}/>
-                {/* </div> */}
-                {/* <div className="sliderImgCtr"> */}
+                </div>
+                <div className="sliderImgCtr">
                     <MyImg src={'/2 (2).png'}/>
-                {/* </div> */}
-                {/* <div className="sliderImgCtr"> */}
+                </div>
+                <div className="sliderImgCtr">
                     <MyImg src={'/3 (2).png'}/>
-                {/* </div> */}
-                {/* <div className="sliderImgCtr"> */}
+                </div>
+                <div className="sliderImgCtr">
                     <MyImg src={'/4 (2).png'}/>
-                {/* </div> */}
-                {/* <div className="sliderImgCtr"> */}
+                </div>
+                <div className="sliderImgCtr">
                     <MyImg src={'/5.png'}/>
-                {/* </div> */}
+                </div>
 
 
             </Slider>

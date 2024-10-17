@@ -41,14 +41,18 @@ section {
   outline: none !important;
   border: none !important;
 }
-.scroll-container .sliderImg {
+.scroll-container .sliderImgCtr {
   height: 376px !important;
   width: 250px;
+}
+.scroll-container .sliderImgCtr img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (max-width: 576px) {
-  .scroll-container .sliderImg {
+  .scroll-container .sliderImgCtr {
     height: 189px !important;
     width: 100% !important;
   }
