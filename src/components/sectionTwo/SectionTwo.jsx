@@ -47,13 +47,13 @@ export default function SectionTwo() {
   return (
     <>
     <div className="pl-2.5 pr-2.5">  
-      <section className='sectionTwo fade-in-section opacity-0'>
+      <section className='sectionTwo fade-in-section opacity-0' >
           <h2 className="title">{t('mainPage.sectionTwo.title')}</h2>
       </section>
-      <section className='fade-in-section sectionThree opacity-0'>
+      <section className='fade-in-section sectionThree opacity-0 delay-animation'>
           <h2 className="title">{t('mainPage.sectionThree.title')}</h2>
       </section>
-      <section className='fade-in-section sectionFour opacity-0'>
+      <section className='fade-in-section sectionFour opacity-0 delay-animation'>
           <img src="/Frame 40445.svg" className='sectionFourImg' alt="" />
           <h2 className="title">{t('mainPage.sectionFour.title')}</h2>
       </section>
