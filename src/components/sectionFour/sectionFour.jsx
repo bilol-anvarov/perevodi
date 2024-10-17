@@ -18,7 +18,7 @@ export default function SectionFour() {
         infinite: true,
         speed: 2000,
         arrows: false,              
-        pauseOnHover: false,    
+        pauseOnHover: true,    
         dots: false,
         slidesToShow: 10,
         slidesToScroll: 1,
@@ -26,6 +26,7 @@ export default function SectionFour() {
         autoplay: true,
         autoplaySpeed: 0,
         variableWidth: true,
+        draggable: true,
       };
     
   const { t } = useTranslation();

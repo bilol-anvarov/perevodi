@@ -28,19 +28,19 @@
     "conditions": {
       "title": "Xaridlar uchun sovg‘aga o‘yinchoqlar oling",
       "card1": {
-        "title": "1. Makroda xarid savatingizni to‘ldiring!",
+        "title": "Makroda xarid savatingizni to‘ldiring",
         "descr": "Barcha chegirmalar qo‘llanganidan keyin chekdagi tovarlarning umumiy qiymati 60 000 so‘mdan yuqori bo‘lishi muhim."
       },
       "card2": {
-        "title": "2. Xaridingiz uchun kassada to‘lov qiling!",
+        "title": "Xaridingiz uchun kassada to‘lov qiling",
         "descr": "Chekdagi har 60 000 so‘m uchun sizga bitta o‘yinchoq beramiz. Ammo o‘yinchoqlar barcha bolakaylarga yetishi uchun bir chekka ko‘pi bilan 6 ta o‘yinchoq beramiz."
       },
       "card3": {
-        "title": "3. O‘yinchoqni oling!",
+        "title": "O‘yinchoqni oling",
         "descr": "Shuningdek, kassadan bepul buklet olishingiz va unda sizda qaysi o‘yinchoqlar borligini belgilashingiz mumkin!"
       },
       "card4": {
-        "title": "4. Butun to‘plamni yig‘ing!",
+        "title": "Butun to‘plamni yig‘ing",
         "descr": "Va erishgan yutuqlaringizni ijtimoiy tarmoqlarda ulashishni unutmang!"
       }
     },

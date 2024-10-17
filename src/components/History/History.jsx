@@ -87,7 +87,7 @@ const Popup = ({product, setIsPopup, activeLan}) => {
               </div>
               {activeLan === "uz" ? (
                 <div className="role mb-[15px]">{product.role_uz}</div>
-            ) : (
+              ) : (
                 <div className="role mb-[15px]">{product.role_ru}</div>
               )}
             {activeLan === "uz" ? (
@@ -238,7 +238,7 @@ export default function History() {
                         exit={{ opacity: 0, x: -100 }}
                         transition={{ duration: 0.5 }}
                     >
-                    <div className="imgCtr">
+                    <div className="imgCtr cursor-pointer" onClick={()=>{setIsPopup(true)}}>
                         <img src={products[currentIndex]?.picture} alt={products[currentIndex]?.name} />
 
                     </div>
@@ -262,6 +262,11 @@ export default function History() {
 
                 </button>
             </div>
+            {activeLan === "uz" ? (
+                <div className="role mb-[15px]">{products[currentIndex]?.role_uz}</div>
+              ) : (
+                <div className="role mb-[15px]">{products[currentIndex]?.role_ru}</div>
+              )}
         </div>
         <div className="dotsCtr">
             {Array.from({ length: 100 }).map((_, i) => (

@@ -37,6 +37,10 @@ section {
   position: relative;
   margin-top: 100px;
 }
+.scroll-container .slick-slide * {
+  outline: none !important;
+  border: none !important;
+}
 .scroll-container .sliderImg {
   height: 376px !important;
   width: 250px;
