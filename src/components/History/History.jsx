@@ -61,11 +61,11 @@ const Popup = ({product, setIsPopup, activeLan}) => {
           </div>
             <div className="popupInside" ref={popupRef}>
               <div className="name mb-[10px] flex gap-[15px] justify-between">
-                {activeLan === "uz" ? (
-                    <h2>{product.name_uz}</h2>
-                ) : (
-                    <h2>{product.name_ru}</h2>
-                )}
+              {activeLan === "uz" ? (
+                <h2 className="mb-[20px]" dangerouslySetInnerHTML={{__html: product.name_uz}} />
+              ) : (
+                <h2 className="mb-[20px]" dangerouslySetInnerHTML={{__html: product.name_ru}} />
+              )}
               <svg
                   onClick={()=>{setIsPopup(false)}}
                   className="cursor-pointer w-6"
@@ -181,13 +181,9 @@ export default function History() {
                 transition={{ duration: 0.5 }}
             >
           {activeLan === "uz" ? (
-            <h3 className="mb-[20px]">{products[currentIndex]?.name_uz}</h3>
+            <h3 className="mb-[20px]" dangerouslySetInnerHTML={{__html: products[currentIndex]?.name_uz}} />
           ) : (
-            // <h3 className="mb-[20px]">{products[currentIndex]?.name_ru}</h3>
             <h3 className="mb-[20px]" dangerouslySetInnerHTML={{__html: products[currentIndex]?.name_ru}} />
-            // <h3 className="mb-[20px]">
-            //   <span className="bold">Миссис</span><br /><span>Коровка</span>
-            // </h3>
           )}
           {activeLan === "uz" ? (
             <p>{products[currentIndex]?.description_uz}</p>
