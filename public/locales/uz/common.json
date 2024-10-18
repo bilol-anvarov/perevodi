@@ -69,6 +69,10 @@
       "card6": {
         "title": "Olingan o‘yinchoqni boshqasiga almashtirish mumkinmi?",
         "descr": "O‘yinchoq uning tarkibini vizual aniqlash imkonini bermaydigan qadoqda beriladi. Aksiya ishtirokchisiga berilishi kerak bo‘lgan o‘yinchoq kassir tomonidan belgilanadi. Aksiya ishtirokchisi kassir tomonidan berilgan o‘yinchoqni almashtirishni talab qilishga haqli emas."
+      },
+      "card7": {
+        "title": "Agar men barcha o‘yinchoq-hayvonchalar kolleksiyasini yig‘sam nima bo‘ladi? ",
+        "descr": "Siz to‘liq kolleksiya egasiga aylanasiz, shuningdek, hali to‘liq kolleksiyasi bo‘lmaganlar bilan yig‘ishni davom ettirishingiz va almashishingiz mumkin."
       }
     },
     "history": {

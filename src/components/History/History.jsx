@@ -183,7 +183,11 @@ export default function History() {
           {activeLan === "uz" ? (
             <h3 className="mb-[20px]">{products[currentIndex]?.name_uz}</h3>
           ) : (
-            <h3 className="mb-[20px]">{products[currentIndex]?.name_ru}</h3>
+            // <h3 className="mb-[20px]">{products[currentIndex]?.name_ru}</h3>
+            <h3 className="mb-[20px]" dangerouslySetInnerHTML={{__html: products[currentIndex]?.name_ru}} />
+            // <h3 className="mb-[20px]">
+            //   <span className="bold">Миссис</span><br /><span>Коровка</span>
+            // </h3>
           )}
           {activeLan === "uz" ? (
             <p>{products[currentIndex]?.description_uz}</p>

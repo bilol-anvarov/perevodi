@@ -86,6 +86,8 @@ export default function Header() {
                   <LinkLayout onClickFunc={closeNavBar} img={'/Ticket Sale mini.svg'} name={t('header.conditions')} src='/#questions'/>
                   <LinkLayout onClickFunc={closeNavBar} img={'/Book Bookmark Minimalistic mini.svg'} name={t('header.contacts')} src='/#shops'/>
                 </ul>
+                {/* change language */}
+                <BtnsChangeLng />
                 {/* burger menu */}
                 <div className="menu" onClick={()=>{setIfOpenBar(item=> item = !ifOpenBar)}}>
 
@@ -95,8 +97,6 @@ export default function Header() {
                       <div className="bar bar--3"></div>
                   </div>
               </div>
-                {/* change language */}
-                <BtnsChangeLng />
             </nav>
           </div>
             <nav className={`nav${ifOpenBar ? ' active' : ''} mobile`}>

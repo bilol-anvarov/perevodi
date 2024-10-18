@@ -46,9 +46,10 @@ section {
 }
 @media (max-width: 576px) {
   #history {
+    padding-top: 20px;
     border-radius: var(--Spacing-ml, 20px);
     background: #F9F4E9;
-    margin: 0 10px;
+    margin: 100px 10px 0;
   }
 }
 #history .mainCtr {
@@ -107,14 +108,21 @@ section {
 @media (max-width: 576px) {
   #history .mainCtr .info {
     gap: var(--Spacing-ml, 10px);
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 #history .mainCtr .info h3 {
   color: #105A25;
   font-size: 32px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 500;
+  text-transform: capitalize;
   line-height: 120%; /* 38.4px */
+}
+#history .mainCtr .info h3 .bold {
+  font-weight: 600;
 }
 @media (max-width: 576px) {
   #history .mainCtr .info h3 {
@@ -194,6 +202,7 @@ section {
 }
 @media (max-width: 576px) {
   #history .mainCtr .island .slider {
+    min-height: 330px !important;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
