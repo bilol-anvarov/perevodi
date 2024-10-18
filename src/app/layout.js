@@ -12,13 +12,13 @@ import { MainContextProvider } from "@/context/MainContext";
 
 export const metadata = {
   title: "Дружная ферма",
-  description: "MAKRO — одна из крупнейших розничных сетей, присутствующая на рынке Узбекистана более 10 лет. Ритейлер предлагает сетевые стандарты качества и выгоды наряду с атмосферой душевности и тепла. MAKRO O‘zbekiston bozorida 10 yildan ortiq faoliyat yuritayotgan eng yirik chakана savdo tarmoqlaridan biridir. Riteyler samimiylik va iliqlik muhiti bilan birga sifat va imtiyozlarning onlayn стандартlarini taklif etadi.",
+  description: "Дарим игрушки за покупки! Акция \"Дружная ферма\" в Makro! - Xaridlar uchun o‘yinchoqlar sovg‘a qilamiz! Makroda \"Ahil ferma\" aksiyasi!",
   openGraph: {
     locale: 'ru_RU, uz_UZ',
     type: 'website',
     url: 'https://makromarket.uz/',
     title: "Дружная ферма",
-    description: "MAKRO — одна из крупнейших розничных сетей, присутствующая на рынке Узбекистана более 10 лет. Ритейлер предлагает сетевые стандарты качества и выгоды наряду с атмосферой душевности и тепла. MAKRO O‘zbekiston bozorida 10 yildan ortiq faolият юритayotgan eng yirik chakana savdo tarmoqlaridan biridir. Riteyler samimiylik ва iliqlik muhiti bilan birga sifat ва imtiyozlarning onlayn стандартларини taklif etadi.",
+    description: "Дарим игрушки за покупки! Акция \"Дружная ферма\" в Makro! - Xaridlar uchun o‘yinchoqlar sovg‘a qilamiz! Makroda \"Ahil ferma\" aksiyasi!",
     siteName: "Makro",
   },
 };

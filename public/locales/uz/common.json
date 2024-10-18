@@ -76,11 +76,12 @@
       }
     },
     "history": {
-      "title": "История игрушек",
+      "title": "O‘yinchoqlar tarixi",
       "more": "Kopro bilish"
     },
     "map": {
       "title": "Xarita",
+      "tashkent": "Tashkent",
       "description": "Narxlar va assortiment tanlangan do'konga bog'liq",
       "searchText" : "Supermarket toping"
     }

@@ -204,7 +204,7 @@ export default function MapIndex() {
         <div className="information relative">
             <div onClick={()=>{setIfOpenCities(item => item = !ifOpenCities)}} className=" justify-between location-name min-h-[45px] flex gap-2.5 items-center cursor-pointer">
               <span className="span max-w-[330px]">
-                {(currentAdress && currentAdress.address) ? currentAdress.address : (currentAdress && currentAdress.title) ? currentAdress.title  : 'Tashkent' }
+                {(currentAdress && currentAdress.address) ? currentAdress.address : (currentAdress && currentAdress.title) ? currentAdress.title  : t('mainPage.map.tashkent') }
               </span>
 
               <svg className={ifOpenCities ? 'rotate-180' : ''} xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
