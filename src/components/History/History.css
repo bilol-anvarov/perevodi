@@ -144,6 +144,7 @@ section {
 @media (max-width: 576px) {
   #history .mainCtr .info p {
     font-size: 16px;
+    height: 115px;
   }
 }
 #history .mainCtr .info .infoBtn {

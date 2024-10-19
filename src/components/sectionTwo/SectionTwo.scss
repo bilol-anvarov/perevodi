@@ -110,3 +110,47 @@ section.sectionFour {
         max-width: 840px;
     }
 }
+
+
+
+.slider-container {
+    width: 100%; /* Adjust width as needed */
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; /* Hide overflowing images */
+  }
+  
+  .slick-track {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .slider-image {
+    width: 100%;
+    pointer-events: none; /* Disable interaction with images */
+    border-radius: 10px;
+  }
+  
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .slick-prev {
+    left: 0;
+  }
+  
+  .slick-next {
+    right: 0;
+  }
+  
