@@ -29,13 +29,12 @@ export default function SectionTwo() {
         {
           opacity: 1,
           y: 0,
-          delay: delay,
+          // delay: delay,
           once: true,
           scrollTrigger: {
             trigger: section,
-            start: 'top 90%', // когда верх секции достигает 99% высоты окна
+            start: 'top 80%', // когда верх секции достигает 99% высоты окна
             // toggleActions: 'play none none reverse', // анимация будет воспроизводиться при скролле
-            once: true, // анимация произойдет только один раз // анимация будет воспроизводиться при скролле
           },
         }
       );
