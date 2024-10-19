@@ -240,7 +240,10 @@ export default function History() {
                         transition={{ duration: 0.5 }}
                     >
                     <figure className="imgCtr cursor-pointer" onClick={()=>{setIsPopup(true)}}>
-                        <img src={products[currentIndex]?.picture} alt={products[currentIndex]?.name} />
+                        <img 
+                          src={products[currentIndex]?.picture} 
+                          alt={products[currentIndex]?.name} 
+                        />
                     </figure>
                 </motion.div>
                 <button className={`slider-arrow ${currentIndex === products.length ? 'disabled' : ''}`} onClick={handleNext}>

@@ -21,7 +21,7 @@ export default function SectionFour() {
     slidesToShow: 7, // Number of images visible at once
     slidesToScroll: 1, // Scroll one image at a time
     speed: 3000, // Control the speed (set high for continuous effect)
-    autoplay: true, // Stop autoplay on hover
+    autoplay: !isHovered, // Stop autoplay on hover
     autoplaySpeed: 0, // For continuous movement, speed is set to zero
     cssEase: 'linear', // Linear easing for smooth scrolling
     pauseOnHover: true, // Pause on hover
@@ -41,20 +41,40 @@ export default function SectionFour() {
       ]
   };
 
-  // Hover handlers
-  const handleMouseEnter = () => setIsHovered(true);
-  const handleMouseLeave = () => setIsHovered(false);
   const { t } = useTranslation();
+
+
+
+ // Function to handle hover state checks
+ const checkHoverState = () => {
+    if (sliderRef.current) {
+      // Check if the slider is hovered over
+      const isHoveredNow = sliderRef.current.matches(':hover');
+      setIsHovered(isHoveredNow);
+    }
+  };
+
+  // useEffect to monitor hover state
+  useEffect(() => {
+    const sliderElement = sliderRef.current;
+
+    // Set up interval to continuously check hover state
+    const interval = setInterval(() => {
+      checkHoverState();
+    }, 100); // Check every 100ms for hover state changes
+
+    return () => clearInterval(interval); // Cleanup interval on unmount
+  }, []);
+  
   
     return (
     <div className="scroll-container fade-in-section opacity-0    ">
         <h2 className="title">{t('mainPage.sectionFive.title')}</h2>
         <div
             className="slider-container"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
+            ref={sliderRef}
         >
-        <Slider ref={sliderRef} {...settings}>
+        <Slider {...settings}>
             <div className="imgCtr">
                 <img
                 src={'/1 (2).png'}
