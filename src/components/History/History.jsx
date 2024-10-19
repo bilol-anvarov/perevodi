@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import "./History.css";
 import { testApi } from '@/utils/api';
 import { useMainContext } from '@/context/MainContext';
+import Image from "next/image";
 
 async function fetchBranch({ activeLan }) {
   const response = await testApi.get(`toys-list/`, {
@@ -239,15 +240,18 @@ export default function History() {
                         exit={{ opacity: 0, x: -100 }}
                         transition={{ duration: 0.5 }}
                     >
-                    <figure className="imgCtr cursor-pointer" onClick={()=>{setIsPopup(true)}}>
-                        <img 
+                    <div className="imgCtr cursor-pointer" onClick={()=>{setIsPopup(true)}}>
+                        <Image 
+                          width={100}
+                          height={100}
+                          quality={100}
                           src={products[currentIndex]?.picture} 
-                          alt={products[currentIndex]?.picture} 
+                          alt={products[currentIndex]?.name_uz} 
                           onError={(e) => {
                             e.target.src = products[currentIndex]?.picture; // Retry loading
                           }}
                         />
-                    </figure>
+                    </div>
                 </motion.div>
                 <button className={`slider-arrow ${currentIndex === products.length ? 'disabled' : ''}`} onClick={handleNext}>
                     <svg
