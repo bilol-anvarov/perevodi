@@ -9,8 +9,8 @@ export default function Conditions() {
     const { t } = useTranslation();
 
   return (
-    <section className='conditions' id='getToys'>
-        <h2 className='title fade-in-section opacity-0'>{t('mainPage.conditions.title')}</h2>
+    <section className='conditions ' id='getToys'>
+        <h2 className='title'>{t('mainPage.conditions.title')}</h2>
         <div className="cards">
             <ConditionCard number={'1'} text={'card1'} />
             <ConditionCard number={'2'} text={'card2'} dalay={true}/>

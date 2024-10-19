@@ -1,7 +1,7 @@
 'use client'
 import React, { useEffect, useRef } from 'react';
-import gsap from 'gsap';
 import './SectionTwo.css'
+import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useTranslation } from 'react-i18next';
 gsap.registerPlugin(ScrollTrigger);
@@ -16,9 +16,9 @@ export default function SectionTwo() {
     const sections = document.querySelectorAll('.fade-in-section');
 
 
-    // sections.forEach(section => {
-    //   gsap.set(section, { opacity: 0, y: 50 }); // начальное состояние
-    // });
+    sections.forEach(section => {
+      gsap.set(section, { opacity: 0, y: 50 }); // начальное состояние
+    });
 
     sections.forEach(section => {
       const hasDelayClass = section.classList.contains('delay-animation');
@@ -29,11 +29,11 @@ export default function SectionTwo() {
         {
           opacity: 1,
           y: 0,
-          // delay: delay,
+          delay: delay,
           once: true,
           scrollTrigger: {
             trigger: section,
-            start: 'top 80%', // когда верх секции достигает 99% высоты окна
+            start: 'top 100%', // когда верх секции достигает 99% высоты окна
             // toggleActions: 'play none none reverse', // анимация будет воспроизводиться при скролле
           },
         }

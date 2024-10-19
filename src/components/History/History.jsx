@@ -242,11 +242,22 @@ export default function History() {
                     >
                     <div className="imgCtr cursor-pointer" onClick={()=>{setIsPopup(true)}}>
                         <Image 
+                          className="min-[567px]:hidden mobile"
                           width={100}
                           height={100}
                           quality={100}
                           src={products[currentIndex]?.picture} 
-                          alt={products[currentIndex]?.name_uz} 
+                          alt={products[currentIndex]?.name_uz ? products[currentIndex]?.name_uz : 'toy img'} 
+                          onError={(e) => {
+                            e.target.src = products[currentIndex]?.picture; // Retry loading
+                          }}
+                        />
+                        <img 
+                          className="max-[567px]:hidden desktop"
+                          width={100}
+                          height={100}
+                          src={products[currentIndex]?.picture} 
+                          alt={products[currentIndex]?.name_uz ? products[currentIndex]?.name_uz : 'toy img'} 
                           onError={(e) => {
                             e.target.src = products[currentIndex]?.picture; // Retry loading
                           }}

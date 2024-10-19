@@ -3,7 +3,9 @@
 
 .scroll-container {
     width: 100%; /* Задаем ширину контейнера */
-    overflow: hidden; /* Скрываем всё, что выходит за пределы контейнера */
+    overflow: hidden;
+    height: fit-content;
+    max-height: 450px;
     position: relative;
     margin-top: 100px;
     .slick-slide *{
