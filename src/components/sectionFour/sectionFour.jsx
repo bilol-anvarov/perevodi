@@ -47,9 +47,9 @@ export default function SectionFour() {
     infinite: true, // Loop infinitely
     slidesToShow: 8, // Number of images visible at once
     slidesToScroll: 1, // Scroll one image at a time
-    speed: 3000, // Control the speed (set high for continuous effect)
+    speed: 2000, // Control the speed (set high for continuous effect)
     autoplay: true, // Stop autoplay on hover
-    autoplaySpeed: 0, // For continuous movement, speed is set to zero
+    autoplaySpeed: 10, // For continuous movement, speed is set to zero
     cssEase: 'linear', // Linear easing for smooth scrolling
     pauseOnHover: true, // Pause on hover
     draggable: true, // Enable manual dragging
