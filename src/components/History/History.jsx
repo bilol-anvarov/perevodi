@@ -242,7 +242,10 @@ export default function History() {
                     <figure className="imgCtr cursor-pointer" onClick={()=>{setIsPopup(true)}}>
                         <img 
                           src={products[currentIndex]?.picture} 
-                          alt={products[currentIndex]?.name} 
+                          alt={products[currentIndex]?.picture} 
+                          onError={(e) => {
+                            e.target.src = products[currentIndex]?.picture; // Retry loading
+                          }}
                         />
                     </figure>
                 </motion.div>
