@@ -38,6 +38,9 @@
     font-style: normal;
   }
     
+  .bold {
+    font-weight: 600;
+  }
     
   *,
   *::before,
@@ -93,6 +96,9 @@
   }
   main *{
     color: $PrimaryColor;
+    &.bold {
+      font-weight: 600;
+    }
   }
   #root{
     min-height: 100%;

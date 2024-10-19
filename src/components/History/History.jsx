@@ -191,8 +191,9 @@ export default function History() {
             <p>{products[currentIndex]?.description_ru}</p>
           )}
             </motion.div>
-          <button type="button" onClick={()=>{setIsPopup(true)}}>
-            {t('mainPage.history.more')}
+
+            <div type="button" className="infoBtn" onClick={()=>{setIsPopup(true)}}>
+              {t('mainPage.history.more')}
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     width={14}
@@ -209,7 +210,7 @@ export default function History() {
                 />
                 </svg>
 
-          </button>
+          </div>
         </div>
         <div className="island">
             <div className="slider">
@@ -238,10 +239,9 @@ export default function History() {
                         exit={{ opacity: 0, x: -100 }}
                         transition={{ duration: 0.5 }}
                     >
-                    <div className="imgCtr cursor-pointer" onClick={()=>{setIsPopup(true)}}>
+                    <figure className="imgCtr cursor-pointer" onClick={()=>{setIsPopup(true)}}>
                         <img src={products[currentIndex]?.picture} alt={products[currentIndex]?.name} />
-
-                    </div>
+                    </figure>
                 </motion.div>
                 <button className={`slider-arrow ${currentIndex === products.length ? 'disabled' : ''}`} onClick={handleNext}>
                     <svg
