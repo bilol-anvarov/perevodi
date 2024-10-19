@@ -8,6 +8,33 @@ import Slider from 'react-slick';
 
 
 
+const images = [
+    '/toys 1.png',
+    '/toys 2.png',
+    '/toys 3.png',
+    '/toys 4.png',
+    '/toys 5.png',
+    '/toys 6.png',
+    '/toys 7.png',
+    '/toys 8.png',
+    '/toys 9.png',
+    '/toys 10.png',
+    '/toys 11.png',
+    '/toys 12.png',
+    '/toys 13.png',
+    '/toys 14.png',
+    '/toys 15.png',
+    '/toys 16.png',
+    '/toys 17.png',
+    '/toys 18.png',
+    '/toys 19.png',
+    '/toys 20.png',
+    '/toys 21.png',
+    '/toys 22.png',
+    '/toys 23.png',
+    '/toys 24.png',
+]
+
 const MyImg = ({src})=> {
     return <img src={src} className="sliderImg" alt="img" />
 }
@@ -18,10 +45,10 @@ export default function SectionFour() {
 
   const settings = {
     infinite: true, // Loop infinitely
-    slidesToShow: 7, // Number of images visible at once
+    slidesToShow: 8, // Number of images visible at once
     slidesToScroll: 1, // Scroll one image at a time
     speed: 3000, // Control the speed (set high for continuous effect)
-    autoplay: !isHovered, // Stop autoplay on hover
+    autoplay: true, // Stop autoplay on hover
     autoplaySpeed: 0, // For continuous movement, speed is set to zero
     cssEase: 'linear', // Linear easing for smooth scrolling
     pauseOnHover: true, // Pause on hover
@@ -35,7 +62,6 @@ export default function SectionFour() {
             slidesToShow: 4,
             slidesToScroll: 1,
             infinite: true,
-            dots: true
           }
         }
       ]
@@ -75,7 +101,18 @@ export default function SectionFour() {
             ref={sliderRef}
         >
         <Slider {...settings}>
-            <div className="imgCtr">
+            {images.map((src, index)=>{
+                return (
+                    <div className="imgCtr" key={index}>
+                        <img
+                        src={src}
+                        alt={`Slide`}
+                        className="slider-image"
+                        />
+                    </div>
+                )
+            })}
+            {/* <div className="imgCtr">
                 <img
                 src={'/1 (2).png'}
                 alt={`Slide`}
@@ -109,45 +146,9 @@ export default function SectionFour() {
                 alt={`Slide`}
                 className="slider-image"
                 />
-            </div>
+            </div> */}
 
 
-
-            <div className="imgCtr">
-                <img
-                src={'/1 (2).png'}
-                alt={`Slide`}
-                className="slider-image"
-                />
-            </div>
-            <div className="imgCtr">
-                <img
-                src={'/2 (2).png'}
-                alt={`Slide`}
-                className="slider-image"
-                />
-            </div>
-            <div className="imgCtr">
-                <img
-                src={'/3 (2).png'}
-                alt={`Slide`}
-                className="slider-image"
-                />
-            </div>
-            <div className="imgCtr">
-                <img
-                src={'/4 (2).png'}
-                alt={`Slide`}
-                className="slider-image"
-                />
-            </div>
-            <div className="imgCtr">
-                <img
-                src={'/5.png'}
-                alt={`Slide`}
-                className="slider-image"
-                />
-            </div>
         </Slider>
         </div>
     </div>
