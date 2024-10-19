@@ -41,7 +41,7 @@ section.sectionTwo {
   max-width: 1292px;
   border-radius: 42px;
   height: 200px;
-  background-image: url("/Блок 2.svg");
+  background-image: url("/Блок 2.webp");
   overflow: hidden;
   margin: 100px auto 18px;
   padding: 50px;
@@ -57,7 +57,7 @@ section.sectionTwo {
 }
 @media (max-width: 576px) {
   section.sectionTwo {
-    background-image: url("/Frame 40464.svg");
+    background-image: url("/Frame 40464.webp");
     padding: 0px 15px 40px;
     border-radius: 20px;
     height: 275px;
@@ -101,7 +101,7 @@ section.sectionThree {
   max-width: 1292px;
   border-radius: 42px;
   height: 200px;
-  background-image: url("/Block 3.svg");
+  background-image: url("/Block 3.webp");
   overflow: hidden;
   margin: 0 auto;
   padding: 50px;
@@ -119,7 +119,7 @@ section.sectionThree {
   section.sectionThree {
     border-radius: 12px;
     height: 108px;
-    background-image: url("/Frame 40466.svg");
+    background-image: url("/Frame 40466.webp");
     padding: 15px 10px;
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -139,7 +139,7 @@ section.sectionFour {
   max-width: 1292px;
   border-radius: 42px;
   height: 200px;
-  background-image: url("/Комикс.svg");
+  background-image: url("/Комикс.webp");
   position: relative;
   margin: 18px auto 0;
   padding: 20px;
@@ -157,7 +157,7 @@ section.sectionFour {
   section.sectionFour {
     border-radius: 24px;
     height: 300px;
-    background-image: url("/Frame 40488.svg");
+    background-image: url("/Frame 40488.webp");
     padding: 0 10px 15px;
     text-align: center;
     -webkit-box-align: start;
