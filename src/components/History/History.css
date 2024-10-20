@@ -122,6 +122,7 @@ section {
   color: #105A25;
   font-size: 32px;
   font-style: normal;
+  height: 60px;
   font-weight: 500;
   text-transform: capitalize;
   line-height: 120%; /* 38.4px */
