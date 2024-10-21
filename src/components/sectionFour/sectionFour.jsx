@@ -96,23 +96,41 @@ export default function SectionFour() {
     <div className="scroll-container fade-in-section opacity-0    ">
         <h2 className="title">{t('mainPage.sectionFive.title')}</h2>
         <div
-            className="slider-container"
+            className="slider-container max-[567px]:hidden"
             ref={sliderRef}
         >
-        <Slider {...settings}>
-            {images.map((src, index)=>{
-                return (
-                    <div className="imgCtr" key={index}>
-                        <img
-                        src={src}
-                        alt={`Slide`}
-                        className="slider-image"
-                        />
-                    </div>
-                )
-            })}
-        </Slider>
+          <Slider {...settings}>
+              {images.map((src, index)=>{
+                  return (
+                      <div className="imgCtr" key={index}>
+                          <img
+                          src={src}
+                          alt={`Slide`}
+                          className="slider-image"
+                          />
+                      </div>
+                  )
+              })}
+          </Slider>
         </div>
+        <div className="slider-container-mobile min-[567px]:hidden flex w-full">
+              <div className="sliderWrp">
+                <div className="images">
+
+                  {images.map((src, index)=>{ return (
+                    <div className="imgCtr w-[120px]" key={index}>
+                        <img
+                          src={src}
+                          alt={`Slide`}
+                          className="slider-image"
+                          />
+                    </div>
+                  )})}
+                </div>
+              </div>
+        </div>
+
     </div>
   );
 }
+
