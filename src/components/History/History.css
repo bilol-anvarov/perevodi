@@ -122,10 +122,18 @@ section {
   color: #105A25;
   font-size: 32px;
   font-style: normal;
-  height: 60px;
+  height: 80px;
   font-weight: 500;
   text-transform: capitalize;
   line-height: 120%; /* 38.4px */
+}
+#history .mainCtr .info h3 :nth-child(3) {
+  font-size: 22px;
+}
+@media (max-width: 576px) {
+  #history .mainCtr .info h3 :nth-child(3) {
+    font-size: 16px;
+  }
 }
 #history .mainCtr .info h3 .bold {
   font-weight: 600;
