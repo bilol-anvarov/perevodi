@@ -211,7 +211,7 @@ export default function MapIndex() {
                 <path d="M11.107 3.92119L10.6429 3.45713C10.5328 3.34697 10.3546 3.34697 10.2445 3.45713L5.99995 7.69229L1.75542 3.45713C1.64526 3.34697 1.46714 3.34697 1.35698 3.45713L0.89292 3.92119C0.782764 4.03135 0.782764 4.20947 0.89292 4.31963L5.80073 9.22744C5.91089 9.3376 6.08901 9.3376 6.19917 9.22744L11.107 4.31963C11.2171 4.20947 11.2171 4.03135 11.107 3.92119Z" fill="#003C96"/>
               </svg>
             </div>
-            <p className='description mt-3'>{t('mainPage.map.description')}</p>
+            {/* <p className='description mt-3'>{t('mainPage.map.description')}</p> */}
             <label htmlFor='search' className="search flex p-2.5 mt-6 gap-2.5">
                 <img className='search-icon' src="/search icon.svg" alt="icon" />
                 <input type="text" onChange={(e)=>{setSearch(e.target.value)}} value={search} id='search' placeholder={t('mainPage.map.searchText')} />
