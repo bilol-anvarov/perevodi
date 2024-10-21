@@ -95,8 +95,9 @@ export default function SectionFour() {
     return (
     <div className="scroll-container fade-in-section opacity-0    ">
         <h2 className="title">{t('mainPage.sectionFive.title')}</h2>
+        {/*  max-[567px]:hidden */}
         <div
-            className="slider-container max-[567px]:hidden"
+            className="slider-container"
             ref={sliderRef}
         >
           <Slider {...settings}>
@@ -113,7 +114,7 @@ export default function SectionFour() {
               })}
           </Slider>
         </div>
-        <div className="slider-container-mobile min-[567px]:hidden flex w-full">
+        {/* <div className="slider-container-mobile min-[567px]:hidden flex w-full">
               <div className="sliderWrp">
                 <div className="images">
 
@@ -128,7 +129,7 @@ export default function SectionFour() {
                   )})}
                 </div>
               </div>
-        </div>
+        </div> */}
 
     </div>
   );
