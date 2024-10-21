@@ -38,6 +38,21 @@ export default function RootLayout({ children }) {
         <meta property="og:image:height" content="630" />
         <meta property="og:image:width" content="1200" />
         <meta name="author" content="MakroMarket" />
+              {/* Load the gtag.js script asynchronously */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-SZ0SS2BTMX"
+        strategy="afterInteractive"
+      />
+      
+      {/* Initialize gtag after the script loads */}
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-SZ0SS2BTMX');
+        `}
+      </Script>
       </head>
       <body className="body makro">
           <MainContextProvider>
