@@ -39,14 +39,14 @@
   .slider-container-mobile {
     .sliderWrp {
       // width: 2000px;
+      overflow-x: scroll;
       .images {
         display: flex;
         align-items: end;
         width: max-content;
-        overflow-x: scroll;
-        &::-webkit-scrollbar {
-          display: none;
-        }
+      }
+      &::-webkit-scrollbar {
+        display: none;
       }
     }
   }

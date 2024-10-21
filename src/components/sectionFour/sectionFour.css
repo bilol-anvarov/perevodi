@@ -56,6 +56,9 @@ section {
   margin: 0 auto 30px;
 }
 
+.slider-container-mobile .sliderWrp {
+  overflow-x: scroll;
+}
 .slider-container-mobile .sliderWrp .images {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -66,9 +69,8 @@ section {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  overflow-x: scroll;
 }
-.slider-container-mobile .sliderWrp .images::-webkit-scrollbar {
+.slider-container-mobile .sliderWrp::-webkit-scrollbar {
   display: none;
 }
 
