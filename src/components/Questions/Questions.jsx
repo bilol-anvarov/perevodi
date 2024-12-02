@@ -44,6 +44,10 @@ export default function Questions() {
             <QuestionCard question={t('mainPage.questions.card6.title')} answer={t('mainPage.questions.card6.descr')} />
             <QuestionCard question={t('mainPage.questions.card7.title')} answer={t('mainPage.questions.card7.descr')} />
         </div>
+        <div className="banner mt-[60px]">
+          <img src="/banner.png" className='max-[1023px]:hidden w-full rounded-[32px]' alt="sda" />
+          <img src="/bannerMobile.png" className='lg:hidden w-full rounded-[32px]' alt="ads" />
+        </div>
     </section>
   )
 }
