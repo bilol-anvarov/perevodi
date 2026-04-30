@@ -1,6 +1,6 @@
 'use client'
 import Link from 'next/link';
-import './header.css'
+import './header.scss'
 import { useTranslation } from 'next-i18next';
 import '../../../i18n';
 import BtnsChangeLng from './Buttons';
@@ -74,17 +74,14 @@ export default function Header() {
       <header className={scrolltopdata}>
           <div className={`header_inside`}>
             <Link onClick={closeNavBar} href={'/'} className="logo">
-              <img src="/logo.svg" alt="/logo.svg" />
+              logo
             </Link>
             <nav className={`nav desktop`}>
                 {/* links */}
                 <ul className="links desktop">
-                  {/* account */}
+                
                   
-                  <LinkLayout onClickFunc={closeNavBar} img={'/Cart 4.svg'} name={t('header.getToys')} src='/#getToys'/>
-                  <LinkLayout onClickFunc={closeNavBar}  img={'/loyality.svg'} name={t('header.history')} src='/#history'/>
-                  <LinkLayout onClickFunc={closeNavBar} img={'/Ticket Sale mini.svg'} name={t('header.conditions')} src='/#questions'/>
-                  <LinkLayout onClickFunc={closeNavBar} img={'/Book Bookmark Minimalistic mini.svg'} name={t('header.contacts')} src='/#shops'/>
+                  
                 </ul>
                 {/* change language */}
                 <BtnsChangeLng />
@@ -101,12 +98,9 @@ export default function Header() {
           </div>
             <nav className={`nav${ifOpenBar ? ' active' : ''} mobile`}>
               <ul className="links desktop">
-                    {/* account */}
+                  
                     
-                    <LinkLayout onClickFunc={closeNavBar} img={'/Cat.svg'} name={t('header.getToys')} src='/#getToys'/>
-                    <LinkLayout onClickFunc={closeNavBar}  img={'/Notebook.svg'} name={t('header.history')} src='/#history'/>
-                    <LinkLayout onClickFunc={closeNavBar} img={'/Dialog.svg'} name={t('header.conditions')} src='/#questions'/>
-                    <LinkLayout onClickFunc={closeNavBar} img={'/Map Point.svg'} name={t('header.contacts')} src='/#shops'/>
+                    
                   </ul>
             </nav>
       </header>

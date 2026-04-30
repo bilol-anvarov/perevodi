@@ -1,68 +1,34 @@
-import "./globals.css";
-import './app.css';
 
-import Footer from "@/components/footer/Footer";
+import "./app.scss";
+
 import Header from "@/components/header/HeaderV2";
-import ScrollToUp from "@/components/ScrollToUp";
-import Script from 'next/script';
 import { MainContextProvider } from "@/context/MainContext";
 
-
-
-
 export const metadata = {
-  title: "Дружная ферма",
-  description: "Дарим игрушки за покупки! Акция \"Дружная ферма\" в Makro! - Xaridlar uchun o‘yinchoqlar sovg‘a qilamiz! Makroda \"Ahil ferma\" aksiyasi!",
+  title: "i18n",
+  description:
+    'i18n',
   openGraph: {
-    locale: 'ru_RU, uz_UZ',
-    type: 'website',
-    url: 'https://makromarket.uz/',
-    title: "Дружная ферма",
-    description: "Дарим игрушки за покупки! Акция \"Дружная ферма\" в Makro! - Xaridlar uchun o‘yinchoqlar sovg‘a qilamiz! Makroda \"Ahil ferma\" aksiyasi!",
-    siteName: "Makro",
+    locale: "uz_UZ",
+    type: "website",
+    url: "https://test.uz/",
+    title: "",
+    description:
+      '',
+    siteName: "i18n",
   },
 };
 
-
 export default function RootLayout({ children }) {
-
-
   return (
     <html lang="ru">
-      <head>
-        <meta name="robots" content="index, follow" />
-        <meta name="keywords" content="Makro, supermarket, магазин, макро, узбекистан, каталог, новости, акции, фрукты, офощи, товары, онлайн магазин, ягоды, ташкент, купить, хозяйственные товары, работа в makro" />
-        <meta name="google" content="notranslate" />
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-        <meta property="og:image" content="https://makromarket.uz/banner_makro.png" />
-        <meta property="og:image:height" content="630" />
-        <meta property="og:image:width" content="1200" />
-        <meta name="author" content="MakroMarket" />
-              {/* Load the gtag.js script asynchronously */}
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-SZ0SS2BTMX"
-        strategy="afterInteractive"
-      />
-      
-      {/* Initialize gtag after the script loads */}
-      <Script id="gtag-init" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-SZ0SS2BTMX');
-        `}
-      </Script>
-      </head>
-      <body className="body makro">
-          <MainContextProvider>
-            <Header />
-              <div id="root" className="root">  
-                  {children}
-              </div>
-            <ScrollToUp />
-            <Footer />
-          </MainContextProvider>
+      <body>
+        <MainContextProvider>
+          <Header />
+          <div  id="root">
+            {children}
+          </div>
+        </MainContextProvider>
       </body>
     </html>
   );

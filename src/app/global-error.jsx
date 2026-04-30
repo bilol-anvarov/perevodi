@@ -16,7 +16,7 @@ export default function GlobalError({ error }) {
         definition requires a `statusCode` prop. However, since the App Router
         does not expose status codes for errors, we simply pass 0 to render a
         generic error message. */}
-        <h1>something</h1>
+        <h1>something went wrong</h1>
         <NextError statusCode={1} />
       </body>
     </html>

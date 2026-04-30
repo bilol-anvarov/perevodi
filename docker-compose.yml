@@ -1,9 +1,0 @@
-
-
-services:
-  nextjs-makro:
-    build: .
-    ports:
-      - '3030:3000'
-    environment:
-      - NODE_ENV=production

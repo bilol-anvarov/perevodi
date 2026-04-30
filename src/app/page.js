@@ -1,24 +1,15 @@
-import Conditions from "@/components/Condistions/Conditions";
-import Heading from "@/components/heading/Heading";
-import History from "@/components/History/History";
-import MapIndex from "@/components/map";
-import Questions from "@/components/Questions/Questions";
-import SectionFour from "@/components/sectionFour/sectionFour";
-import SectionTwo from "@/components/sectionTwo/SectionTwo";
+"use client";
 
-
+import { useTranslation } from "next-i18next";
 
 export default function Home() {
+  const { t } = useTranslation();
 
   return (
-    <main className="">
-        <Heading />
-        <SectionTwo />
-        <SectionFour />
-        <Conditions />
-        <History />
-        <Questions />
-        <MapIndex/>
+    <main className="min-h-screen flex items-center justify-center p-8">
+      <h1 className="text-4xl font-bold text-center">
+        {t("mainPage.heading.headingText")}
+      </h1>
     </main>
   );
 }

@@ -1,21 +1,17 @@
 @import '../../app/globals.scss';
 
 header{
-  padding: 20px 10px;
+  padding: 0px 10px;
   position: fixed;
   top: 0;
   z-index: 100;
   width: 100%;
   transition: all 0.2s ease-in-out;
-  // &.scrolled{
-  //   padding: 0 10px;
-  // }
-  //   background: $PrimaryColor;
+  background-color: gray;
+  color: white;
   .header_inside{
     padding: 20px 42px;
-    background: $PrimaryColor;
     max-width: $mx-width;
-    border-radius: 999px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -30,20 +26,7 @@ header{
       display: flex;
       gap: 50px;
       align-items: center;
-      ul.links.desktop{
-        display: flex;
-        align-items: center;
-        list-style: none;
-        font-family: $f-fors;
-        gap: 50px;
-        li a {
-          img{
-            display: none;
-          }
-          color: #F8ECDC;
-          text-decoration: none;
-        } 
-      }
+      
       .language_menu{
         cursor: pointer;
         padding: 13px;
@@ -168,34 +151,7 @@ header{
     nav.mobile{
       gap: 18px !important;
       ul.links{
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 140px 10px 0 !important;
-        height: 100vh;
-        display: none !important;
-        gap: 13px !important;
-        z-index: 100;
-        background-color: white;
-        li {
-          width: 100%;
-          a{
-            width: 100%;
-            display: flex;
-            border-radius: 10px;
-            padding: 20px 25px;
-            align-items: center;
-            font-size: 21px;
-            gap: 15px;
-            align-self: stretch;
-            background-color: #FAFAFA;
-            img.nav-icon{
-              display: block !important;
-            }
-            color: $PrimaryColor !important;
-          }
-        }
+        
       }
       .language_menu{
         padding: 9px 6px !important;

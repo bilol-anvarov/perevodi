@@ -15,7 +15,7 @@ export function MainContextProvider({ children }) {
     return "uz"; // Default language for server-side rendering
   });
 
-  const router = useRouter();
+ 
 
 
 
