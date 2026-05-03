@@ -1,7 +1,7 @@
 'use client'
 import i18next from "i18next";
 import { createContext, useContext, useState, useEffect } from "react";
-import { AnimatePresence } from 'framer-motion';
+
 
 const MainContext = createContext({});
 
@@ -34,9 +34,8 @@ export function MainContextProvider({ children }) {
 
   return (
     <MainContext.Provider value={{ activeLan, changeLan }}>
-      <AnimatePresence mode="wait">
+
         {children}
-      </AnimatePresence>
     </MainContext.Provider>
   );
 }
