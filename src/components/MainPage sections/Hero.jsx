@@ -1,7 +1,7 @@
 'use client'
 import Link from 'next/link';
 import { useTranslation } from 'react-i18next';
-import './hero.scss';
+import './Hero.scss';
 
 export default function Hero() {
   const { t } = useTranslation();
