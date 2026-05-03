@@ -5,9 +5,41 @@
     "about": "Biz haqimizda",
     "contact": "Aloqa"
   },
-  "mainPage": {
-    "heading": {
-      "headingText": "wassup, bro?"
+  "services": {
+    "eyebrow": "Bizning xizmatlar",
+    "title": "Nima qila olamiz?",
+    "subtitle": "Barcha turdagi hujjatlar bilan ishlaymiz — tez, sifatli va ishonchli.",
+    "learnMore": "Batafsil",
+    "cta": "Ariza qoldirish",
+    "items": {
+      "apostille": {
+        "title": "Apostil",
+        "desc": "Xalqaro hujjatlarni rasmiylashtirish. Tez va rasmiy muddatlarda."
+      },
+      "legalization": {
+        "title": "Legalizatsiya",
+        "desc": "Istalgan mamlakat uchun hujjatlarni legalizatsiya qilish."
+      },
+      "translation": {
+        "title": "Yozma tarjima",
+        "desc": "Har qanday murakkablikdagi hujjatlarni professional tarjima qilish."
+      },
+      "notarial": {
+        "title": "Notarial tasdiqlash",
+        "desc": "Tarjimalarni notarius tomonidan tasdiqlash xizmati."
+      },
+      "personal": {
+        "title": "Shaxsiy hujjatlar",
+        "desc": "Guvohnomalar, diplomlar, attestatlar, pasportlar, ma'lumotnomalar va boshqalar."
+      },
+      "medical": {
+        "title": "Tibbiy hujjatlar",
+        "desc": "Tibbiy tarixlar, xulosalar va boshqa tibbiy hujjatlarni tarjima qilish."
+      },
+      "consultation": {
+        "title": "Konsultatsiya",
+        "desc": "Bepul va tez maslahat. Qaysi xizmat kerakligini aniqlaymiz."
+      }
     }
   },
   "hero": {

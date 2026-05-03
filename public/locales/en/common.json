@@ -5,9 +5,41 @@
     "about": "About Us",
     "contact": "Contact"
   },
-  "mainPage": {
-    "heading": {
-      "headingText": "wassup, bro?"
+  "services": {
+    "eyebrow": "Our Services",
+    "title": "What We Do",
+    "subtitle": "We handle all types of documents — fast, professional and reliable.",
+    "learnMore": "Learn more",
+    "cta": "Submit a Request",
+    "items": {
+      "apostille": {
+        "title": "Apostille",
+        "desc": "Official apostille for international documents. Fast and on time."
+      },
+      "legalization": {
+        "title": "Legalization",
+        "desc": "Document legalization for any country in the world."
+      },
+      "translation": {
+        "title": "Written Translation",
+        "desc": "Professional translation of documents of any complexity."
+      },
+      "notarial": {
+        "title": "Notarial Certification",
+        "desc": "Notarial certification of translated documents."
+      },
+      "personal": {
+        "title": "Personal Documents",
+        "desc": "Certificates, diplomas, transcripts, passports, references and more."
+      },
+      "medical": {
+        "title": "Medical Documents",
+        "desc": "Translation of medical records, reports and other medical documentation."
+      },
+      "consultation": {
+        "title": "Consultation",
+        "desc": "Free and fast consultation. We'll help you figure out what you need."
+      }
     }
   },
   "hero": {
