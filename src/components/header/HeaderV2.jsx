@@ -5,104 +5,107 @@ import { useTranslation } from 'next-i18next';
 import '../../../i18n';
 import BtnsChangeLng from './Buttons';
 import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
-
-const LinkLayout = ({name, src, img, onClickFunc})=>{
-  return ( 
+const LinkLayout = ({ name, src, onClickFunc }) => {
+  return (
     <li className='link'>
       <Link onClick={onClickFunc} href={src}>
-        <img className='nav-icon' src={img} alt={'icon'} />
         {name}
       </Link>
     </li>
-)}
+  );
+};
 
-
-
-
-
-// for header with green background 
 export default function Header() {
-  const router = useRouter();
-
-  const [ifOpenBar, setIfOpenBar] = useState(false)
-
-
-  useEffect(()=>{
-    if(ifOpenBar){
-      document.querySelector('body').classList.add('overflow-y-hidden')
-    } else{
-      document.querySelector('body').classList.remove('overflow-y-hidden')
-    }
-  },[ifOpenBar])
-
-
-   // Add and Remove Class on scroll
-   const [scrolltopdata, setscrolltopdata] = useState('');
-
-   useEffect(() => {
-       window.addEventListener('scroll', () => {
-           if (window.scrollY < 15) {
-               setscrolltopdata('');
-           } else {
-               setscrolltopdata('scrolled');
-           }
-       });
-   }, [])
-
-
-
-  useEffect(() => {
-    // Close the bar when the location changes
-    setIfOpenBar(false);
-  }, [router.events]);
-
-
-  
-
-  function closeNavBar(){
-    setIfOpenBar(false)
-  }
-
-
-
+  const pathname = usePathname();
   const { t } = useTranslation();
 
+  const [ifOpenBar, setIfOpenBar] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
 
-    return (
-      <header className={scrolltopdata}>
-          <div className={`header_inside`}>
-            <Link onClick={closeNavBar} href={'/'} className="logo">
-              logo
-            </Link>
-            <nav className={`nav desktop`}>
-                {/* links */}
-                <ul className="links desktop">
-                
-                  
-                  
-                </ul>
-                {/* change language */}
-                <BtnsChangeLng />
-                {/* burger menu */}
-                <div className="menu" onClick={()=>{setIfOpenBar(item=> item = !ifOpenBar)}}>
+  // Lock body scroll when mobile menu is open
+  useEffect(() => {
+    document.body.classList.toggle('overflow-y-hidden', ifOpenBar);
+    return () => document.body.classList.remove('overflow-y-hidden');
+  }, [ifOpenBar]);
 
-                  <div className={`iconMenu humburger${ifOpenBar ? ' active' : ''}`}>
-                      <div className="bar bar--1"></div>
-                      <div className="bar bar--2"></div>
-                      <div className="bar bar--3"></div>
-                  </div>
-              </div>
-            </nav>
-          </div>
-            <nav className={`nav${ifOpenBar ? ' active' : ''} mobile`}>
-              <ul className="links desktop">
-                  
-                    
-                    
-                  </ul>
-            </nav>
-      </header>
-    )
+  // Scroll listener with cleanup
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 15);
+    window.addEventListener('scroll', handleScroll, { passive: true });
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Close mobile menu on route change
+  useEffect(() => {
+    setIfOpenBar(false);
+  }, [pathname]);
+
+  function closeNavBar() {
+    setIfOpenBar(false);
   }
+
+  const navLinks = [
+    { name: t('nav.home'),     src: '/' },
+    { name: t('nav.services'), src: '/services' },
+    { name: t('nav.about'),    src: '/about' },
+    { name: t('nav.contact'),  src: '/contact' },
+  ];
+
+  return (
+    <header className={scrolled ? 'scrolled' : ''}>
+      <div className="header_inside">
+
+        <Link onClick={closeNavBar} href="/" className="logo">
+          <img src="/logo.png" alt="LexBridge Logo" className='w-[100px]'/>
+        </Link>
+
+        {/* Desktop nav */}
+        <nav className="nav desktop">
+          <ul className="links">
+            {navLinks.map((link) => (
+              <LinkLayout
+                key={link.src}
+                name={link.name}
+                src={link.src}
+                onClickFunc={closeNavBar}
+              />
+            ))}
+          </ul>
+
+          <div className="nav__right">
+            <BtnsChangeLng />
+
+            <div
+              className="menu"
+              onClick={() => setIfOpenBar((prev) => !prev)}
+              aria-label="Toggle menu"
+              role="button"
+            >
+              <div className={`iconMenu${ifOpenBar ? ' active' : ''}`}>
+                <div className="bar bar--1" />
+                <div className="bar bar--2" />
+                <div className="bar bar--3" />
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      {/* Mobile drawer */}
+      <nav className={`nav mobile${ifOpenBar ? ' active' : ''}`}>
+        <ul className="links">
+          {navLinks.map((link) => (
+            <LinkLayout
+              key={link.src}
+              name={link.name}
+              src={link.src}
+              onClickFunc={closeNavBar}
+            />
+          ))}
+        </ul>
+      </nav>
+    </header>
+  );
+}

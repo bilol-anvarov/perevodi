@@ -1,45 +1,44 @@
 'use client'
 import i18next from "i18next";
 import { createContext, useContext, useState, useEffect } from "react";
-import { useRouter } from 'next/navigation';
-import { AnimatePresence } from 'framer-motion'
-
+import { AnimatePresence } from 'framer-motion';
 
 const MainContext = createContext({});
 
+const SUPPORTED_LANGS = ['uz', 'ru', 'en'];
+const DEFAULT_LANG = 'uz';
+
 export function MainContextProvider({ children }) {
-  const [activeLan, setActiveLan] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("i18nextLng") || "uz";
-    }
-    return "uz"; // Default language for server-side rendering
-  });
+  const [activeLan, setActiveLan] = useState(DEFAULT_LANG);
 
- 
-
-
-
+  // Read saved language on mount (client only)
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      localStorage.setItem("i18nextLng", activeLan);
-      i18next.changeLanguage(activeLan);
+    const saved = localStorage.getItem('i18nextLng');
+    if (saved && SUPPORTED_LANGS.includes(saved)) {
+      setActiveLan(saved);
+      i18next.changeLanguage(saved);
     }
+  }, []);
+
+  // Sync to localStorage and i18next on change
+  useEffect(() => {
+    localStorage.setItem('i18nextLng', activeLan);
+    i18next.changeLanguage(activeLan);
   }, [activeLan]);
 
   const changeLan = (language) => {
-    setActiveLan(language);
+    if (SUPPORTED_LANGS.includes(language)) {
+      setActiveLan(language);
+    }
   };
-
-  const values = {
-    activeLan,
-    changeLan,
-  };
-
 
   return (
-  <MainContext.Provider value={values}>
-    {children}
-  </MainContext.Provider>);
+    <MainContext.Provider value={{ activeLan, changeLan }}>
+      <AnimatePresence mode="wait">
+        {children}
+      </AnimatePresence>
+    </MainContext.Provider>
+  );
 }
 
 export function useMainContext() {

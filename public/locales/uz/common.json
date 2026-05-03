@@ -1,9 +1,31 @@
 {
-
+  "nav": {
+    "home": "Bosh sahifa",
+    "services": "Xizmatlar",
+    "about": "Biz haqimizda",
+    "contact": "Aloqa"
+  },
   "mainPage": {
-    "heading":{
-      "headingText": "salom"
+    "heading": {
+      "headingText": "wassup, bro?"
     }
-    
+  },
+  "hero": {
+    "eyebrow": "Toshkent №1 tarjimonlik xizmati",
+    "heading": "Переводы",
+    "headingAccent": "№1",
+    "subtitle": "Apostil, legalizatsiya va hujjatlar tarjimasi. Tez, aniq va ishonchli.",
+    "badge1": "100% Maxfiylik",
+    "badge2": "Tezkor muddatlar",
+    "badge3": "Barcha mamlakatlar uchun",
+    "cta1": "Ariza qoldirish",
+    "cta2": "Bepul konsultatsiya",
+    "services": {
+      "apostille": "Apostil",
+      "legalization": "Legalizatsiya",
+      "translation": "Yozma tarjima",
+      "personal": "Shaxsiy hujjatlar",
+      "consultation": "Konsultatsiya"
+    }
   }
 }

@@ -1,0 +1,31 @@
+{
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "mainPage": {
+    "heading": {
+      "headingText": "wassup, bro?"
+    }
+  },
+  "hero": {
+    "eyebrow": "Tashkent's #1 Translation Service",
+    "heading": "Translations",
+    "headingAccent": "#1",
+    "subtitle": "Apostille, legalization and document translation. Fast, accurate and reliable.",
+    "badge1": "100% Confidential",
+    "badge2": "Urgent Turnaround",
+    "badge3": "All Countries",
+    "cta1": "Submit a Request",
+    "cta2": "Free Consultation",
+    "services": {
+      "apostille": "Apostille",
+      "legalization": "Legalization",
+      "translation": "Written Translation",
+      "personal": "Personal Documents",
+      "consultation": "Consultation"
+    }
+  }
+}
