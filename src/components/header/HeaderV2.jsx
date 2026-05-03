@@ -1,7 +1,8 @@
 'use client'
 import Link from 'next/link';
 import './header.scss'
-import { useTranslation } from 'next-i18next';
+import { useTranslation } from 'react-i18next';
+
 import '../../../i18n';
 import BtnsChangeLng from './Buttons';
 import { useEffect, useState } from 'react';
