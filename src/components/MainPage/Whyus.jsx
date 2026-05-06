@@ -1,6 +1,6 @@
 'use client'
 import { useTranslation } from 'react-i18next';
-import './WhyUs.scss';
+import './Whyus.scss';
 
 const REASONS = [
   {

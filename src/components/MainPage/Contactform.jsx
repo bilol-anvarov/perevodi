@@ -1,7 +1,7 @@
 'use client'
 import { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import './ContactForm.scss';
+import './Contactform.scss';
 
 const TELEGRAM_BOT_TOKEN = '8206552530:AAGEpigXIY1vzYk8Nig1frvLrc2k7Tr8R3s';
 const TELEGRAM_CHAT_ID = '-5166065997';
