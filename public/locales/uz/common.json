@@ -82,5 +82,44 @@
         "desc": "Professional tarjimonlar va notariuslar bilan ishlaymiz. Sifat kafolatlanadi."
       }
     }
+  },
+  "contactForm": {
+    "eyebrow": "Bog'lanish",
+    "title": "Bepul konsultatsiya oling",
+    "subtitle": "Formani to'ldiring, biz siz bilan 30 daqiqa ichida bog'lanamiz.",
+    "perk1": "Bepul dastlabki konsultatsiya",
+    "perk2": "30 daqiqa ichida javob",
+    "perk3": "Hech qanday yashirin to'lovlar yo'q",
+    "name": "Ismingiz",
+    "namePlaceholder": "Ismingiizni kiriting",
+    "phone": "Telefon raqam",
+    "service": "Xizmat turi",
+    "servicePlaceholder": "Xizmatni tanlang",
+    "message": "Qo'shimcha ma'lumot (ixtiyoriy)",
+    "messagePlaceholder": "Hujjat haqida qisqacha yozing...",
+    "submit": "Konsultatsiya olish",
+    "sending": "Yuborilmoqda...",
+    "error": "Xatolik yuz berdi. Iltimos qayta urinib ko'ring.",
+    "successTitle": "Muvaffaqiyatli yuborildi!",
+    "successDesc": "Tez orada siz bilan bog'lanamiz.",
+    "successBtn": "Yana yuborish"
+  },
+  "errors": {
+    "nameRequired": "Iltimos, ismingizni kiriting",
+    "nameTooShort": "Ism kamida 2 ta belgidan iborat bo'lishi kerak",
+    "phoneRequired": "Iltimos, telefon raqamingizni kiriting",
+    "phoneInvalid": "Telefon raqam noto'g'ri kiritilgan",
+    "serviceRequired": "Iltimos, xizmat turini tanlang"
+  },
+  "footer": {
+    "tagline": "Toshkent №1 tarjimonlik xizmati. Tez, aniq va ishonchli.",
+    "nav": "Sahifalar",
+    "services": "Xizmatlar",
+    "contact": "Aloqa",
+    "address": "Toshkent, 2-qavat, xona 201-202",
+    "hours": "Dush–Shan: 09:00 – 18:00",
+    "copy": "Переводы №1. Barcha huquqlar himoyalangan.",
+    "office": "2-этаж, каб. 201-202"
   }
+  
 }

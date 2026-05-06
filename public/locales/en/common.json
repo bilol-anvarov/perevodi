@@ -82,5 +82,44 @@
         "desc": "We work with professional translators and notaries. Quality is guaranteed."
       }
     }
+  },
+  "contactForm": {
+    "eyebrow": "Contact Us",
+    "title": "Get a Free Consultation",
+    "subtitle": "Fill out the form and we will get back to you within 30 minutes.",
+    "perk1": "Free initial consultation",
+    "perk2": "Response within 30 minutes",
+    "perk3": "No hidden fees",
+    "name": "Your Name",
+    "namePlaceholder": "Enter your name",
+    "phone": "Phone Number",
+    "service": "Service Type",
+    "servicePlaceholder": "Select a service",
+    "message": "Additional Information (optional)",
+    "messagePlaceholder": "Briefly describe your document...",
+    "submit": "Get Consultation",
+    "sending": "Sending...",
+    "error": "An error occurred. Please try again.",
+    "successTitle": "Successfully Sent!",
+    "successDesc": "We will get back to you shortly.",
+    "successBtn": "Send Again"
+  },
+  "errors": {
+    "nameRequired": "Please enter your name",
+    "nameTooShort": "Name must be at least 2 characters",
+    "phoneRequired": "Please enter your phone number",
+    "phoneInvalid": "Phone number is not valid",
+    "serviceRequired": "Please select a service"
+  },
+  "footer": {
+    "tagline": "Tashkent's #1 translation service. Fast, accurate and reliable.",
+    "nav": "Pages",
+    "services": "Services",
+    "contact": "Contact",
+    "address": "Tashkent, 2nd floor, office 201-202",
+    "hours": "Mon–Sat: 09:00 – 18:00",
+    "copy": "Переводы №1. All rights reserved.",
+    "office": "2nd floor, office 201-202"
   }
+  
 }

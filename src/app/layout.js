@@ -1,4 +1,5 @@
 
+import Footer from "@/components/footer/footer";
 import "./app.scss";
 
 import Header from "@/components/header/HeaderV2";
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
           <div  id="root">
             {children}
           </div>
+          <Footer />
         </MainContextProvider>
       </body>
     </html>
