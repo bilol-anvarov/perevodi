@@ -59,5 +59,28 @@
       "personal": "Personal Documents",
       "consultation": "Consultation"
     }
+  },
+  "whyus": {
+    "eyebrow": "Why Us?",
+    "title": "Reasons to Choose Us",
+    "subtitle": "Our clients trust us — and there are good reasons for that.",
+    "items": {
+      "confidential": {
+        "title": "100% Confidential",
+        "desc": "All your documents are kept strictly confidential and never shared with third parties."
+      },
+      "speed": {
+        "title": "Fast Turnaround",
+        "desc": "We work without delays. Urgent orders accepted at any time."
+      },
+      "countries": {
+        "title": "50+ Countries",
+        "desc": "We handle documents intended for any country in the world."
+      },
+      "quality": {
+        "title": "Quality Guaranteed",
+        "desc": "We work with professional translators and notaries. Quality is guaranteed."
+      }
+    }
   }
 }

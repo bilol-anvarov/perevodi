@@ -59,5 +59,28 @@
       "personal": "Shaxsiy hujjatlar",
       "consultation": "Konsultatsiya"
     }
+  },
+  "whyus": {
+    "eyebrow": "Nega biz?",
+    "title": "Bizni tanlash sabablari",
+    "subtitle": "Mijozlarimiz bizga ishonadi — va bunga asoslar bor.",
+    "items": {
+      "confidential": {
+        "title": "100% Maxfiylik",
+        "desc": "Barcha hujjatlaringiz qat'iy maxfiylik asosida saqlanadi va uchinchi shaxslarga berilmaydi."
+      },
+      "speed": {
+        "title": "Tezkor xizmat",
+        "desc": "Kechiktirmasdan ishlаymiz. Shoshilinch buyurtmalar ham qabul qilinadi."
+      },
+      "countries": {
+        "title": "50+ mamlakat",
+        "desc": "Dunyoning istalgan mamlakatiga mo'ljallangan hujjatlar bilan ishlaymiz."
+      },
+      "quality": {
+        "title": "Sifat kafolati",
+        "desc": "Professional tarjimonlar va notariuslar bilan ishlaymiz. Sifat kafolatlanadi."
+      }
+    }
   }
 }

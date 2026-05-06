@@ -1,0 +1,142 @@
+@import '../../app/app.scss';
+
+.whyus {
+  position: relative;
+  overflow: hidden;
+
+  // Navy background like the banner
+  background-color: $navy;
+
+  // Section header overrides for dark bg
+  .section-header__eyebrow {
+    color: $gold;
+  }
+
+  .section-header__title {
+    color: $white;
+  }
+
+  .section-header__subtitle {
+    color: rgba($white, 0.65);
+  }
+
+  // Decorative background circles
+  &__bg {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      right: -120px;
+      width: 480px;
+      height: 480px;
+      border: 1px solid rgba($gold, 0.1);
+      border-radius: 50%;
+      box-shadow: 0 0 0 80px rgba($gold, 0.04);
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -80px;
+      left: -80px;
+      width: 320px;
+      height: 320px;
+      background: radial-gradient(circle, rgba($gold, 0.06) 0%, transparent 70%);
+      border-radius: 50%;
+    }
+  }
+
+  // ── Grid ──
+  &__grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+
+    @media (max-width: $bp-lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $bp-sm) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // ── Card ──
+  &__card {
+    background: rgba($white, 0.04);
+    border: 1px solid rgba($gold, 0.15);
+    border-radius: var(--radius-md);
+    padding: 32px 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: background-color 0.25s ease, border-color 0.25s ease, transform 0.25s ease;
+
+    &:hover {
+      background-color: rgba($gold, 0.07);
+      border-color: rgba($gold, 0.4);
+      transform: translateY(-4px);
+    }
+  }
+
+  // ── Top row: icon + stat ──
+  &__card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+
+  // ── Icon ──
+  &__card-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
+    background: rgba($gold, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+      width: 24px;
+      height: 24px;
+      stroke: $gold;
+    }
+  }
+
+  // ── Stat number ──
+  &__card-stat {
+    font-family: $f-heading;
+    font-size: 2rem;
+    font-weight: 800;
+    color: $gold;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    opacity: 0.9;
+  }
+
+  // ── Title ──
+  &__card-title {
+    font-family: $f-heading;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $white;
+    margin: 0;
+    line-height: 1.3;
+  }
+
+  // ── Description ──
+  &__card-desc {
+    font-family: $f-body;
+    font-size: 0.875rem;
+    color: rgba($white, 0.6);
+    line-height: 1.65;
+    margin: 0;
+  }
+}
