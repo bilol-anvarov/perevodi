@@ -172,6 +172,75 @@
         "features": ["Hech qanday majburiyat yo'q", "Telefon yoki ofisda", "Tajribali mutaxassislar"]
       }
     }
+  },
+  "about": {
+    "eyebrow": "Biz haqimizda",
+    "title": "Toshkentning №1 tarjimonlik xizmati",
+    "desc": "10 yildan ortiq tajriba, 5000+ mamnun mijoz va 50+ mamlakat bilan ishlash tajribasi. Biz hujjatlar tarjimasi va rasmiylashtirish sohasida ishonchli hamkoringiz.",
+    "cta": "Biz bilan bog'lanish",
+    "stats": {
+      "years": "Yillik tajriba",
+      "clients": "Mamnun mijozlar",
+      "countries": "Mamlakat",
+      "docs": "Bajarilgan hujjatlar"
+    },
+    "story": {
+      "eyebrow": "Bizning tarix",
+      "title": "Biz qanday boshladik",
+      "p1": "Переводы №1 kompaniyasi 10 yildan ortiq muqaddam Toshkentda tashkil etilgan. O'sha paytdan boshlab biz minglab mijozlarga hujjatlarini rasmiylashtirish va tarjima qilishda yordam berdik.",
+      "p2": "Bugun biz Markaziy Osiyodagi eng ishonchli tarjimonlik xizmatlaridan biri hisoblanamiz. Har bir hujjatga individual yondashuv, maxfiylik va sifat kafolati — bu bizning asosiy tamoyillarimiz.",
+      "badge": "2014 yildan beri"
+    },
+    "values": {
+      "eyebrow": "Bizning qadriyatlar",
+      "title": "Nima bizni ajratib turadi",
+      "items": {
+        "confidential": {
+          "title": "100% Maxfiylik",
+          "desc": "Barcha hujjatlaringiz qat'iy maxfiylik asosida saqlanadi va hech qachon uchinchi shaxslarga berilmaydi."
+        },
+        "accuracy": {
+          "title": "Aniqlik kafolati",
+          "desc": "Har bir tarjima malakali mutaxassis tomonidan tekshiriladi. Xatoga yo'l qo'ymaymiz."
+        },
+        "speed": {
+          "title": "Tezkor xizmat",
+          "desc": "Shoshilinch buyurtmalarni ham qabul qilamiz. Vaqtingiz qimmatli ekanini tushunamiz."
+        },
+        "legal": {
+          "title": "Rasmiy ishlov",
+          "desc": "Barcha hujjatlar qonun talablariga to'liq mos holda rasmiylashtiriladi."
+        }
+      }
+    },
+    "process": {
+      "eyebrow": "Jarayon",
+      "title": "Biz qanday ishlaymiz",
+      "steps": {
+        "apply": {
+          "title": "Ariza qoldiring",
+          "desc": "Telefon, Telegram yoki sayt orqali ariza qoldiring."
+        },
+        "consult": {
+          "title": "Konsultatsiya",
+          "desc": "Mutaxassisimiz siz bilan bog'lanib, tafsilotlarni aniqlashtiradi."
+        },
+        "process": {
+          "title": "Ishlov beriladi",
+          "desc": "Hujjatingiz professional tarzda tarjima qilinadi va rasmiylashtiriladi."
+        },
+        "deliver": {
+          "title": "Topshirish",
+          "desc": "Tayyor hujjatlar kelishilgan muddatda topshiriladi."
+        }
+      }
+    },
+    "ctaBanner": {
+      "title": "Hujjatlaringizni rasmiylashtirga tayyormisiz?",
+      "desc": "Bugun biz bilan bog'laning va bepul konsultatsiya oling.",
+      "btn1": "Ariza qoldirish",
+      "btn2": "Xizmatlar"
+    }
   }
   
 }
