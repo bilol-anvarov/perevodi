@@ -1,0 +1,231 @@
+@import '../../app/app.scss';
+
+.services-page {
+
+  // ── Page Hero ──
+  &__hero {
+    background: linear-gradient(160deg, $navy 0%, #071f3e 100%);
+    padding: calc($header-height + 48px) 0 64px;
+    border-bottom: 2px solid $gold;
+
+    .section-header__eyebrow {
+      color: $gold;
+    }
+  }
+
+  &__hero-title {
+    font-family: $f-heading;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: $white;
+    margin: 12px 0 16px;
+    line-height: 1.15;
+  }
+
+  &__hero-subtitle {
+    font-family: $f-body;
+    font-size: 1.05rem;
+    color: rgba($white, 0.7);
+    max-width: 520px;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  // ── List ──
+  &__list {
+    background-color: $white;
+  }
+
+  // ── Item (alternating row) ──
+  &__item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    align-items: center;
+    padding: 64px 0;
+    border-bottom: 1px solid $border-color;
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    // Reversed item — content left, visual right
+    &--reverse {
+      .services-page__visual { order: 2; }
+      .services-page__content { order: 1; }
+    }
+
+    @media (max-width: $bp-lg) {
+      grid-template-columns: 1fr;
+      gap: 36px;
+      padding: 48px 0;
+
+      &--reverse {
+        .services-page__visual { order: unset; }
+        .services-page__content { order: unset; }
+      }
+    }
+  }
+
+  // ── Visual side ──
+  &__visual {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__visual-inner {
+    background: linear-gradient(135deg, $navy 0%, #0a2a52 100%);
+    border-radius: var(--radius-lg);
+    padding: 48px 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 36px;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid rgba($gold, 0.2);
+
+    // Decorative circle
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -60px;
+      right: -60px;
+      width: 200px;
+      height: 200px;
+      border: 1px solid rgba($gold, 0.1);
+      border-radius: 50%;
+      box-shadow: 0 0 0 40px rgba($gold, 0.04);
+    }
+  }
+
+  // ── Service icon ──
+  &__icon {
+    width: 96px;
+    height: 96px;
+    border-radius: 20px;
+    background: rgba($gold, 0.12);
+    border: 1px solid rgba($gold, 0.25);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+
+    svg {
+      width: 44px;
+      height: 44px;
+      stroke: $gold;
+    }
+  }
+
+  // ── Meta (time + price) ──
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &__meta-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  &__meta-label {
+    font-family: $f-heading;
+    font-size: 0.65rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: rgba($white, 0.4);
+  }
+
+  &__meta-value {
+    font-family: $f-heading;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $gold;
+  }
+
+  &__meta-divider {
+    width: 1px;
+    height: 36px;
+    background-color: rgba($white, 0.12);
+  }
+
+  // ── Content side ──
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__number {
+    font-family: $f-heading;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.16em;
+    color: $gold;
+    text-transform: uppercase;
+  }
+
+  &__item-title {
+    font-family: $f-heading;
+    font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+    font-weight: 800;
+    color: $navy;
+    margin: 0;
+    line-height: 1.2;
+  }
+
+  &__item-desc {
+    font-family: $f-body;
+    font-size: 0.975rem;
+    color: $muted-text;
+    line-height: 1.75;
+    margin: 0;
+  }
+
+  // ── Feature list ──
+  &__item-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      font-family: $f-body;
+      font-size: 0.9rem;
+      color: $dark-text;
+      line-height: 1.5;
+    }
+  }
+
+  &__check {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    border-radius: 50%;
+    background: rgba($gold, 0.12);
+    color: $gold;
+    font-size: 0.65rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    margin-top: 1px;
+  }
+}

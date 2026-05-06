@@ -120,6 +120,58 @@
     "hours": "Dush–Shan: 09:00 – 18:00",
     "copy": "Переводы №1. Barcha huquqlar himoyalangan.",
     "office": "2-этаж, каб. 201-202"
+  },
+  "servicesPage": {
+    "eyebrow": "Xizmatlar",
+    "title": "Barcha xizmatlarimiz",
+    "subtitle": "Har bir hujjat turi bo'yicha professional yondashuv va kafolatlangan sifat.",
+    "time": "Muddat",
+    "price": "Narx",
+    "cta": "Ariza qoldirish",
+    "items": {
+      "apostille": {
+        "desc": "Apostil — bu hujjatning xalqaro miqyosda tan olinishini ta'minlovchi maxsus tasdiqlash shaklidir. Biz barcha turdagi rasmiy hujjatlar uchun apostil rasmiylashtirishni amalga oshiramiz.",
+        "time": "1–3 ish kuni",
+        "price": "So'rovga ko'ra",
+        "features": ["Barcha rasmiy hujjatlar uchun", "Tezkor rasmiylashtirish imkoni", "Barcha mamlakatlar uchun yaroqli"]
+      },
+      "legalization": {
+        "desc": "Legalizatsiya — bu chet el hujjatlarini O'zbekistonda va aksincha rasmiy tan olish jarayoni. Biz butun jarayonni siz uchun boshqaramiz.",
+        "time": "3–7 ish kuni",
+        "price": "So'rovga ko'ra",
+        "features": ["50+ mamlakat bilan ishlаymiz", "Konsullik legalizatsiyasi", "To'liq jarayon nazorati"]
+      },
+      "translation": {
+        "desc": "Professional yozma tarjima xizmati. Huquqiy, tibbiy, texnik va boshqa sohalardagi hujjatlarni tarjima qilamiz.",
+        "time": "1–2 ish kuni",
+        "price": "Sahifadan boshlab",
+        "features": ["20+ tilda tarjima", "Soha mutaxassislari", "Maxfiylik kafolati"]
+      },
+      "notarial": {
+        "desc": "Tarjimalarni notarius tomonidan tasdiqlash. Ko'plab rasmiy muassasalar notarial tasdiqlangan tarjimani talab qiladi.",
+        "time": "1 ish kuni",
+        "price": "So'rovga ko'ra",
+        "features": ["Litsenziyalangan notariuslar", "Tez rasmiylashtirish", "Barcha hujjat turlari"]
+      },
+      "personal": {
+        "desc": "Shaxsiy hujjatlar tarjimasi — guvohnomalar, diplomlar, attestatlar, pasportlar, ma'lumotnomalar va boshqalar.",
+        "time": "1 ish kuni",
+        "price": "Hujjatdan boshlab",
+        "features": ["Tug'ilish guvohnomasi", "Diplom va attestatlar", "Pasport va ID hujjatlar"]
+      },
+      "medical": {
+        "desc": "Tibbiy hujjatlarni professional tarjima qilish — tibbiy tarix, xulosalar, retseptlar va boshqa tibbiy hujjatlar.",
+        "time": "1–2 ish kuni",
+        "price": "So'rovga ko'ra",
+        "features": ["Tibbiy terminologiya bilimdoni", "Maxfiylik to'liq saqlanadi", "Har qanday mamlakat uchun"]
+      },
+      "consultation": {
+        "desc": "Qaysi xizmat kerakligini bilmaysizmi? Bepul konsultatsiya oling. Mutaxassislarimiz sizga to'g'ri yo'nalish ko'rsatadi.",
+        "time": "Darhol",
+        "price": "Bepul",
+        "features": ["Hech qanday majburiyat yo'q", "Telefon yoki ofisda", "Tajribali mutaxassislar"]
+      }
+    }
   }
   
 }
