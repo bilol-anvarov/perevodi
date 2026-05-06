@@ -102,14 +102,14 @@
     "error": "Xatolik yuz berdi. Iltimos qayta urinib ko'ring.",
     "successTitle": "Muvaffaqiyatli yuborildi!",
     "successDesc": "Tez orada siz bilan bog'lanamiz.",
-    "successBtn": "Yana yuborish"
-  },
-  "errors": {
-    "nameRequired": "Iltimos, ismingizni kiriting",
-    "nameTooShort": "Ism kamida 2 ta belgidan iborat bo'lishi kerak",
-    "phoneRequired": "Iltimos, telefon raqamingizni kiriting",
-    "phoneInvalid": "Telefon raqam noto'g'ri kiritilgan",
-    "serviceRequired": "Iltimos, xizmat turini tanlang"
+    "successBtn": "Yana yuborish",
+    "errors": {
+      "nameRequired": "Iltimos, ismingizni kiriting",
+      "nameTooShort": "Ism kamida 2 ta belgidan iborat bo'lishi kerak",
+      "phoneRequired": "Iltimos, telefon raqamingizni kiriting",
+      "phoneInvalid": "Telefon raqam noto'g'ri kiritilgan",
+      "serviceRequired": "Iltimos, xizmat turini tanlang"
+    }
   },
   "footer": {
     "tagline": "Toshkent №1 tarjimonlik xizmati. Tez, aniq va ishonchli.",
