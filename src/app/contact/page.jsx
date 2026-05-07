@@ -2,7 +2,7 @@
 import { useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
-import './contact.scss';
+import './Contact.scss';
 
 const TELEGRAM_BOT_TOKEN = '8206552530:AAGEpigXIY1vzYk8Nig1frvLrc2k7Tr8R3s';
 const TELEGRAM_CHAT_ID = '-5166065997';
