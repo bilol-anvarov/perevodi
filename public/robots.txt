@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://perevodi1.uz/sitemap.xml
