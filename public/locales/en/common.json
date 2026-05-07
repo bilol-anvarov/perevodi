@@ -241,6 +241,32 @@
       "btn1": "Submit a Request",
       "btn2": "Services"
     }
+  },
+  "contactPage": {
+    "eyebrow": "Contact",
+    "title": "Get in Touch",
+    "subtitle": "Have questions? Fill out the form or call us directly.",
+    "formTitle": "Submit a Request",
+    "submit": "Send",
+    "infoTitle": "Contact Information",
+    "phone": "Phone",
+    "email": "Email",
+    "address": "Address",
+    "addressValue": "Tashkent, Yakkasaray District, 46 Nukus Street, \"Ideal\" Business Center, 2nd floor, Office 201, \"Yulduz/\"",
+    "hours": "Working Hours",
+    "hoursValue": "Monday – Saturday: 09:00 – 18:00",
+    "attachLabel": "Attach a file (optional)",
+    "dropzoneText": "Drag files here or click to select",
+    "dropzoneHint": "JPG, PNG, PDF, DOC — up to 10MB each, max 5 files",
+    "fileTypeError": "File type not allowed",
+    "fileSizeError": "File size must not exceed 10MB",
+    "fileCountError": "Maximum 5 files allowed",
+    "officePhotoLabel": "Office photo",
+    "officeRoom": "2nd floor, office 201-202",
+    "mapEyebrow": "Location",
+    "mapTitle": "Where to Find Us",
+    "mapSubtitle": "We are located in the center of Tashkent. 2nd floor, office 201-202.",
+    "mapBtn": "Open in Google Maps"
   }
     
 }

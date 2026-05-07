@@ -1,0 +1,454 @@
+@import '../../app/app.scss';
+
+.contact-page {
+
+  // ── Hero ──
+  &__hero {
+    background: linear-gradient(160deg, $navy 0%, #071f3e 100%);
+    padding: calc($header-height + 48px) 0 64px;
+    border-bottom: 2px solid $gold;
+
+    .section-header__eyebrow { color: $gold; }
+  }
+
+  &__hero-title {
+    font-family: $f-heading;
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 800;
+    color: $white;
+    margin: 12px 0 16px;
+  }
+
+  &__hero-subtitle {
+    font-family: $f-body;
+    font-size: 1.05rem;
+    color: rgba($white, 0.7);
+    max-width: 500px;
+    line-height: 1.7;
+    margin: 0;
+  }
+
+  // ── Body grid ──
+  &__body { background-color: $light-gray; }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 48px;
+    align-items: flex-start;
+
+    @media (max-width: $bp-lg) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // ── Form side ──
+  &__form-side {
+    background: $white;
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    box-shadow: var(--shadow-md);
+    border: 1px solid $border-color;
+
+    @media (max-width: $bp-sm) { padding: 24px; }
+  }
+
+  &__form-title {
+    font-family: $f-heading;
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: $navy;
+    margin: 0 0 28px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  // ── Success ──
+  &__success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+    padding: 40px 0;
+
+    h3 {
+      font-family: $f-heading;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: $navy;
+    }
+    p {
+      font-family: $f-body;
+      font-size: 0.95rem;
+      color: $muted-text;
+    }
+  }
+
+  &__success-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: rgba($gold, 0.12);
+    color: $gold;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+  }
+
+  // ── Info side ──
+  &__info-side {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__info-card {
+    background: $white;
+    border-radius: var(--radius-lg);
+    padding: 32px;
+    border: 1px solid $border-color;
+    box-shadow: var(--shadow-sm);
+  }
+
+  &__info-title {
+    font-family: $f-heading;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $navy;
+    margin: 0 0 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid $border-color;
+  }
+
+  &__info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+
+      svg {
+        width: 20px;
+        height: 20px;
+        stroke: $gold;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+
+      div {
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+      }
+
+      span {
+        font-family: $f-heading;
+        font-size: 0.7rem;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: $muted-text;
+      }
+
+      a, p {
+        font-family: $f-body;
+        font-size: 0.9rem;
+        color: $dark-text;
+        text-decoration: none;
+        margin: 0;
+        line-height: 1.5;
+        transition: color 0.25s ease;
+
+        &:hover { color: $gold; }
+      }
+    }
+  }
+
+  // ── Office photo ──
+  &__office-photo {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid $border-color;
+
+    img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+  }
+
+  &__office-photo-placeholder {
+    height: 220px;
+    background: linear-gradient(135deg, $navy 0%, #0a2a52 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border-radius: var(--radius-lg);
+
+    svg {
+      width: 48px;
+      height: 48px;
+      stroke: rgba($gold, 0.4);
+    }
+
+    p {
+      font-family: $f-heading;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: rgba($white, 0.6);
+      margin: 0;
+    }
+
+    span {
+      font-family: $f-body;
+      font-size: 0.75rem;
+      color: $gold;
+      opacity: 0.7;
+    }
+  }
+}
+
+// ── Form fields (shared cp- prefix) ──
+.cp-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+
+  label {
+    font-family: $f-heading;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: $navy;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+  }
+
+  input, select, textarea {
+    font-family: $f-body;
+    font-size: 0.95rem;
+    color: $dark-text;
+    background-color: $light-gray;
+    border: 1.5px solid $border-color;
+    border-radius: var(--radius-sm);
+    padding: 12px 16px;
+    width: 100%;
+    outline: none;
+    transition: border-color 0.25s ease, box-shadow 0.25s ease, background-color 0.25s ease;
+    appearance: none;
+
+    &::placeholder { color: rgba($dark-text, 0.35); }
+
+    &:focus {
+      border-color: $gold;
+      background-color: $white;
+      box-shadow: 0 0 0 3px rgba($gold, 0.12);
+    }
+  }
+
+  select {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%23041E42' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
+    padding-right: 40px;
+    cursor: pointer;
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 110px;
+  }
+
+  &.has-error input,
+  &.has-error select,
+  &.has-error textarea {
+    border-color: #e53e3e;
+    background-color: rgba(#e53e3e, 0.03);
+  }
+
+  &__error {
+    font-family: $f-body;
+    font-size: 0.78rem;
+    color: #e53e3e;
+  }
+}
+
+// ── Dropzone ──
+.cp-dropzone {
+  border: 2px dashed $border-color;
+  border-radius: var(--radius-md);
+  padding: 32px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: border-color 0.25s ease, background-color 0.25s ease;
+  text-align: center;
+
+  svg {
+    width: 32px;
+    height: 32px;
+    stroke: $muted-text;
+    transition: stroke 0.25s ease;
+  }
+
+  p {
+    font-family: $f-heading;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: $dark-text;
+    margin: 0;
+  }
+
+  span {
+    font-family: $f-body;
+    font-size: 0.78rem;
+    color: $muted-text;
+  }
+
+  &:hover, &--over {
+    border-color: $gold;
+    background-color: rgba($gold, 0.04);
+
+    svg { stroke: $gold; }
+  }
+}
+
+// ── File list ──
+.cp-files {
+  list-style: none;
+  padding: 0;
+  margin: 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: $light-gray;
+    border-radius: var(--radius-sm);
+    padding: 8px 12px;
+    border: 1px solid $border-color;
+  }
+
+  &__icon { font-size: 1rem; flex-shrink: 0; }
+
+  &__name {
+    font-family: $f-body;
+    font-size: 0.82rem;
+    color: $dark-text;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__size {
+    font-family: $f-body;
+    font-size: 0.75rem;
+    color: $muted-text;
+    flex-shrink: 0;
+  }
+
+  &__remove {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: $muted-text;
+    font-size: 0.75rem;
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: color 0.2s ease, background-color 0.2s ease;
+    flex-shrink: 0;
+
+    &:hover {
+      color: #e53e3e;
+      background-color: rgba(#e53e3e, 0.08);
+    }
+  }
+}
+
+// ── Global error ──
+.cp-error {
+  font-family: $f-body;
+  font-size: 0.85rem;
+  color: #e53e3e;
+  text-align: center;
+  padding: 10px;
+  background: rgba(#e53e3e, 0.06);
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(#e53e3e, 0.2);
+}
+
+// ── Submit ──
+.cp-submit {
+  width: 100%;
+  padding: 14px;
+  font-size: 0.95rem;
+
+  &:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
+
+// ── Map section ──
+.contact-page {
+  &__map-section {
+    background-color: $white;
+    padding-top: 64px;
+
+    @media (max-width: $bp-md) { padding-top: 48px; }
+  }
+
+  &__map-wrap {
+    position: relative;
+    margin-top: 40px;
+
+    iframe {
+      display: block;
+      width: 100%;
+      height: 480px;
+      filter: grayscale(20%);
+
+      @media (max-width: $bp-md) { height: 320px; }
+    }
+  }
+
+  &__map-btn {
+    position: absolute;
+    bottom: 24px;
+    right: 24px;
+    box-shadow: var(--shadow-lg);
+
+    @media (max-width: $bp-sm) {
+      position: static;
+      display: flex;
+      justify-content: center;
+      margin: 16px auto 0;
+      width: fit-content;
+    }
+  }
+}

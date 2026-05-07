@@ -241,6 +241,32 @@
       "btn1": "Ariza qoldirish",
       "btn2": "Xizmatlar"
     }
+  },
+  "contactPage": {
+    "eyebrow": "Aloqa",
+    "title": "Biz bilan bog'laning",
+    "subtitle": "Savollaringiz bormi? Formani to'ldiring yoki to'g'ridan-to'g'ri qo'ng'iroq qiling.",
+    "formTitle": "Ariza qoldiring",
+    "submit": "Yuborish",
+    "infoTitle": "Aloqa ma'lumotlari",
+    "phone": "Telefon",
+    "email": "Elektron pochta",
+    "address": "Manzil",
+    "addressValue": "Toshkent shahri, Yakkasaroy tumani, Nukus ko'chasi 46, \"Ideal Business Center\", 2-qavat, 201-xona, \"Yulduz\"",
+    "hours": "Ish vaqti",
+    "hoursValue": "Dushanba – Shanba: 09:00 – 18:00",
+    "attachLabel": "Fayl biriktirish (ixtiyoriy)",
+    "dropzoneText": "Fayllarni bu yerga tashlang yoki tanlang",
+    "dropzoneHint": "JPG, PNG, PDF, DOC — har biri 10MB gacha, max 5 ta fayl",
+    "fileTypeError": "Ruxsat etilmagan fayl turi",
+    "fileSizeError": "Fayl hajmi 10MB dan oshmasligi kerak",
+    "fileCountError": "Maksimal 5 ta fayl yuklash mumkin",
+    "officePhotoLabel": "Ofis fotosi",
+    "officeRoom": "2-qavat, xona 201-202",
+    "mapEyebrow": "Manzil",
+    "mapTitle": "Bizni qayerdan topish mumkin",
+    "mapSubtitle": "Biz Toshkent markazida joylashganmiz. 2-qavat, xona 201-202.",
+    "mapBtn": "Google Maps da ochish"
   }
   
 }
