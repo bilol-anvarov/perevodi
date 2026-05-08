@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import './about.scss';
 
 const STATS = [
-  { key: 'years',    value: '10+' },
+  { key: 'years',    value: '16+' },
   { key: 'clients',  value: '5000+' },
   { key: 'countries',value: '50+' },
   { key: 'docs',     value: '20000+' },

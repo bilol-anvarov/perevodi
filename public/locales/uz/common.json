@@ -130,7 +130,7 @@
     "cta": "Ariza qoldirish",
     "items": {
       "apostille": {
-        "desc": "Apostil — bu hujjatning xalqaro miqyosda tan olinishini ta'minlovchi maxsus tasdiqlash shaklidir. Biz barcha turdagi rasmiy hujjatlar uchun apostil rasmiylashtirishni amalga oshiramiz.",
+        "desc": "Apostil — bu hujjatning xalqaro miqyosda tan olinishini ta'minlovchi maxsus TIV, Adliya vazirligi yoki Talim vazirligi tomonidan tasdiqlangan shaklidir. Biz barcha turdagi rasmiy hujjatlar uchun apostil rasmiylashtirishni amalga oshiramiz.",
         "time": "2–6 ish kuni",
         "price": "150 000 so'mdan +",
         "features": ["Barcha rasmiy hujjatlar uchun", "Tezkor rasmiylashtirish imkoni", "Barcha mamlakatlar uchun yaroqli"]
@@ -189,7 +189,7 @@
       "title": "Biz qanday boshladik",
       "p1": "Переводы №1 kompaniyasi 16 yildan ortiq muqaddam Toshkentda tashkil etilgan. O'sha paytdan boshlab biz minglab mijozlarga hujjatlarini rasmiylashtirish va tarjima qilishda yordam berdik.",
       "p2": "Bugun biz Markaziy Osiyodagi eng ishonchli tarjimonlik xizmatlaridan biri hisoblanamiz. Har bir hujjatga individual yondashuv, maxfiylik va sifat kafolati — bu bizning asosiy tamoyillarimiz.",
-      "badge": "2014 yildan beri"
+      "badge": "2010 yildan beri"
     },
     "values": {
       "eyebrow": "Bizning qadriyatlar",
