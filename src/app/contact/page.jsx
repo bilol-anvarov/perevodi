@@ -5,7 +5,7 @@ import Link from 'next/link';
 import './Contact.scss';
 
 const TELEGRAM_BOT_TOKEN = '8206552530:AAGEpigXIY1vzYk8Nig1frvLrc2k7Tr8R3s';
-const TELEGRAM_CHAT_ID = '-5166065997';
+const TELEGRAM_CHAT_ID = '-1003967202673';
 
 const SERVICES_KEYS = [
   'apostille', 'legalization', 'translation',
@@ -315,8 +315,8 @@ export default function ContactPage() {
                     </svg>
                     <div>
                       <span>{t('contactPage.phone')}</span>
+                      <a href="tel:+998909620082">+998 90 962-00-82</a>
                       <a href="tel:+998909006030">+998 90 900-60-30</a>
-                      <a href="tel:+998712300671">+998 71 230-06-71</a>
                     </div>
                   </li>
                   <li>
@@ -334,7 +334,7 @@ export default function ContactPage() {
                     </svg>
                     <div>
                       <span>WhatsApp</span>
-                      <a href="https://wa.me/998712300671" target="_blank" rel="noopener noreferrer">+998 71 230-06-71</a>
+                      <a href="https://wa.me/998909620082" target="_blank" rel="noopener noreferrer">+998 90 962-00-82</a>
                     </div>
                   </li>
                   <li>

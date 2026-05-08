@@ -116,7 +116,7 @@
     "nav": "Pages",
     "services": "Services",
     "contact": "Contact",
-    "address": "Tashkent, 2nd floor, office 201-202",
+    "address": "Yakkasaray District, 46 Nukus Street",
     "hours": "Mon–Sat: 09:00 – 18:00",
     "copy": "Переводы №1. All rights reserved.",
     "office": "2nd floor, office 201-202"
@@ -130,8 +130,7 @@
     "cta": "Submit a Request",
     "items": {
       "apostille": {
-        "desc": "An apostille is a special form of certification that ensures international recognition of a document. We handle apostille certification for all types of official documents.",
-        "time": "2–6 business days",
+        "desc": "An apostille is an official form of certification that ensures the international recognition of a document and is issued by the Ministry of Foreign Affairs, the Ministry of Justice, or the Ministry of Education. We provide apostille services for all types of official documents.",        "time": "2–6 business days",
         "price": "From 150,000 UZS +",
         "features": ["For all official documents", "Urgent processing available", "Valid for all countries"]
       },
@@ -139,12 +138,12 @@
         "desc": "Legalization is the process of officially recognizing foreign documents in Uzbekistan and vice versa. We handle the entire process for you.",
         "time": "3 business days",
         "price": "By document",
-        "features": ["We work with 50+ countries", "Consular legalization", "Full process management"]
+        "features": ["For required countries", "Consular legalization", "Full process management"]
       },
       "translation": {
         "desc": "Professional written document translation. We translate legal, medical, technical and other documents across all fields.",
-        "time": "1–2 business days",
-        "price": "From one page",
+        "time": "1 business days",
+        "price": "By document",
         "features": ["Translation into 20+ languages", "Industry specialists", "Confidentiality guaranteed"]
       },
       "notarial": {
@@ -157,14 +156,14 @@
         "desc": "Translation of personal documents — certificates, diplomas, transcripts, passports, references and more.",
         "time": "1 business day",
         "price": "From one document",
-        "features": ["Birth certificates", "Diplomas and transcripts", "Passports and IDs"]
+        "features": ["Embassies", "Consular offices", "Visa centers"]
       },
       "medical": {
         "desc": "Professional translation of medical documents — medical records, reports, prescriptions and other medical documentation.",
         "time": "1–2 business days",
         "price": "On request",
-        "features": ["Medical terminology expertise", "Full confidentiality", "For any country"]
-      },
+        "features": ["Specialists in medical terminology", "Complete confidentiality", "For all countries"] 
+     },
       "consultation": {
         "desc": "Not sure which service you need? Get a free consultation. Our specialists will point you in the right direction.",
         "time": "Immediate",
@@ -201,7 +200,7 @@
         },
         "accuracy": {
           "title": "Accuracy Guaranteed",
-          "desc": "Every translation is reviewed by a qualified specialist. We do not make mistakes."
+          "desc": "Every translation is reviewed by a qualified specialist."
         },
         "speed": {
           "title": "Fast Turnaround",
@@ -219,11 +218,11 @@
       "steps": {
         "apply": {
           "title": "Submit a Request",
-          "desc": "Contact us by phone, Telegram or through the website."
+          "desc": "Submit a request by phone, Telegram, or through the website, or contact us via your preferred messenger."
         },
         "consult": {
           "title": "Consultation",
-          "desc": "Our specialist will contact you and clarify the details."
+          "desc": "Contact us and our specialist will assist you."
         },
         "process": {
           "title": "Processing",

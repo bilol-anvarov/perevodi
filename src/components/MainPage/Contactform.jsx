@@ -4,7 +4,7 @@ import { useTranslation } from 'react-i18next';
 import './Contactform.scss';
 
 const TELEGRAM_BOT_TOKEN = '8206552530:AAGEpigXIY1vzYk8Nig1frvLrc2k7Tr8R3s';
-const TELEGRAM_CHAT_ID = '-5166065997';
+const TELEGRAM_CHAT_ID = '-1003967202673';
 
 const SERVICES_KEYS = [
   'apostille',

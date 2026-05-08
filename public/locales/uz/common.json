@@ -116,7 +116,7 @@
     "nav": "Sahifalar",
     "services": "Xizmatlar",
     "contact": "Aloqa",
-    "address": "Toshkent, 2-qavat, xona 201-202",
+    "address": "Yakkasaroy tumani, Nukus ko'chasi 46",
     "hours": "Dush–Shan: 09:00 – 18:00",
     "copy": "Переводы №1. Barcha huquqlar himoyalangan.",
     "office": "2-этаж, каб. 201-202"
@@ -130,21 +130,20 @@
     "cta": "Ariza qoldirish",
     "items": {
       "apostille": {
-        "desc": "Apostil — bu hujjatning xalqaro miqyosda tan olinishini ta'minlovchi maxsus TIV, Adliya vazirligi yoki Talim vazirligi tomonidan tasdiqlangan shaklidir. Biz barcha turdagi rasmiy hujjatlar uchun apostil rasmiylashtirishni amalga oshiramiz.",
-        "time": "2–6 ish kuni",
+        "desc": "Apostil — bu hujjatning xalqaro miqyosda tan olinishini ta’minlovchi, TIV, Adliya vazirligi yoki Ta’lim vazirligi tomonidan tasdiqlanadigan rasmiy shakldir. Biz barcha turdagi rasmiy hujjatlar uchun apostil rasmiylashtirish xizmatlarini amalga oshiramiz.",        "time": "2–6 ish kuni",
         "price": "150 000 so'mdan +",
         "features": ["Barcha rasmiy hujjatlar uchun", "Tezkor rasmiylashtirish imkoni", "Barcha mamlakatlar uchun yaroqli"]
       },
       "legalization": {
-        "desc": "Legalizatsiya — bu chet el hujjatlarini O'zbekistonda va aksincha rasmiy tan olish jarayoni. Biz butun jarayonni siz uchun boshqaramiz.",
+        "desc": "Legalisatsiya— bu hujjatning xalqaro miqyosda tan olinishini ta'minlovchi maxsus notaries, Adliya vazirligi va TIV tomonidan tasdiqlangan shaklidir. Biz barcha turdagi rasmiy hujjatlar uchun rasmiylashtirishni amalga oshiramiz.",
         "time": "3 ish kuni",
         "price": "Hujjatga qarab",
-        "features": ["50+ mamlakat bilan ishlаymiz", "Konsullik legalizatsiyasi", "To'liq jarayon nazorati"]
+        "features": ["Talab qilingan davlatlar uchun", "Konsullik legalizatsiyasi (qoshimcha xizmat)", "To'liq jarayon nazorati"]
       },
       "translation": {
         "desc": "Professional yozma tarjima xizmati. Huquqiy, tibbiy, texnik va boshqa sohalardagi hujjatlarni tarjima qilamiz.",
-        "time": "1–2 ish kuni",
-        "price": "Sahifadan boshlab",
+        "time": "1 ish kuni",
+        "price": "Hujjatga qarab",
         "features": ["20+ tilda tarjima", "Soha mutaxassislari", "Maxfiylik kafolati"]
       },
       "notarial": {
@@ -157,13 +156,13 @@
         "desc": "Shaxsiy hujjatlar tarjimasi — guvohnomalar, diplomlar, attestatlar, pasportlar, ma'lumotnomalar va boshqalar.",
         "time": "1 ish kuni",
         "price": "Hujjatdan boshlab",
-        "features": ["Tug'ilish guvohnomasi", "Diplom va attestatlar", "Pasport va ID hujjatlar"]
+        "features": ["Elchixonalar", "Konsullik idoralari", "Viza markazlari"]
       },
       "medical": {
         "desc": "Tibbiy hujjatlarni professional tarjima qilish — tibbiy tarix, xulosalar, retseptlar va boshqa tibbiy hujjatlar.",
         "time": "1–2 ish kuni",
         "price": "So'rovga ko'ra",
-        "features": ["Tibbiy terminologiya bilimdoni", "Maxfiylik to'liq saqlanadi", "Har qanday mamlakat uchun"]
+        "features": ["Tibbiy terminologiya bo‘yicha mutaxassislar", "Maxfiylik to‘liq saqlanadi", "Barcha mamlakatlar uchun"]
       },
       "consultation": {
         "desc": "Qaysi xizmat kerakligini bilmaysizmi? Bepul konsultatsiya oling. Mutaxassislarimiz sizga to'g'ri yo'nalish ko'rsatadi.",
@@ -201,7 +200,7 @@
         },
         "accuracy": {
           "title": "Aniqlik kafolati",
-          "desc": "Har bir tarjima malakali mutaxassis tomonidan tekshiriladi. Xatoga yo'l qo'ymaymiz."
+          "desc": "Har bir tarjima malakali mutaxassis tomonidan tekshiriladi. "
         },
         "speed": {
           "title": "Tezkor xizmat",
@@ -219,12 +218,11 @@
       "steps": {
         "apply": {
           "title": "Ariza qoldiring",
-          "desc": "Telefon, Telegram yoki sayt orqali ariza qoldiring."
+          "desc": "Telefon, Telegram yoki sayt orqali ariza qoldiring yoki o‘zingizga qulay messenjer orqali biz bilan bog‘laning."
         },
         "consult": {
           "title": "Konsultatsiya",
-          "desc": "Mutaxassisimiz siz bilan bog'lanib, tafsilotlarni aniqlashtiradi."
-        },
+          "desc": "Mutaxassisimiz siz bilan bog‘lanib, tafsilotlarni aniqlashtiradi."        },
         "process": {
           "title": "Ishlov beriladi",
           "desc": "Hujjatingiz professional tarzda tarjima qilinadi va rasmiylashtiriladi."
