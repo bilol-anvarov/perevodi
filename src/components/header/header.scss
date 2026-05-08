@@ -62,31 +62,30 @@ header {
     }
   }
 
-  // Fallback text logo
   &__text {
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
 
-    strong {
-      font-family: $f-heading;
-      font-size: 1.15rem;
-      font-weight: 800;
-      color: $white;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    span {
-      font-family: $f-heading;
-      font-size: 0.6rem;
-      font-weight: 600;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: $gold;
-      margin-top: 3px;
-    }
+  strong {
+    font-family: $f-heading;
+    font-size: 1.15rem;
+    font-weight: 800;
+    color: $white;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
   }
+
+  span {
+    font-family: $f-heading;
+    font-size: 0.6rem;
+    font-weight: 600;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: $gold;
+    margin-top: 3px;
+  }
+}
 }
 
 // ─────────────────────────────────────────────

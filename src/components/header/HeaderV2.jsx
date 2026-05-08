@@ -59,7 +59,11 @@ export default function Header() {
       <div className="header_inside">
 
         <Link onClick={closeNavBar} href="/" className="logo">
-          <img src="/logo.png" alt="LexBridge Logo" className='w-[100px]'/>
+          <img src="/logo.png" alt="Переводы №1" className='w-[60px]'/>
+          <div className="logo__text">
+            <strong>ПЕРЕВОДЫ</strong>
+            <span>№1</span>
+          </div>
         </Link>
 
         {/* Desktop nav */}
