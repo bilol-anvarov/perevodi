@@ -61,7 +61,7 @@ export default function Header() {
         <Link onClick={closeNavBar} href="/" className="logo">
           <img src="/logo.png" alt="Переводы №1" className='w-[60px]'/>
           <div className="logo__text">
-            <strong>ПЕРЕВОДЫ</strong>
+            <strong>PEREVODI</strong>
             <span>№1</span>
           </div>
         </Link>
