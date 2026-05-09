@@ -96,26 +96,92 @@ export default function AboutPage() {
               <p>{t('about.story.p1')}</p>
               <p>{t('about.story.p2')}</p>
             </div>
-            <div className="about-page__story-visual">
-              <div className="about-page__story-card">
-                <div className="about-page__story-badge">
-                  <span>{t('about.story.badge')}</span>
-                </div>
-                <div className="about-page__story-lines">
-                  {[...Array(5)].map((_, i) => (
-                    <div key={i} className="about-page__story-line" />
-                  ))}
-                </div>
-                <div className="about-page__story-stamp">
-                  <svg viewBox="0 0 80 80" fill="none">
-                    <circle cx="40" cy="40" r="38" stroke="#D4A73A" strokeWidth="1.5" strokeDasharray="4 2" />
-                    <circle cx="40" cy="40" r="30" stroke="#D4A73A" strokeWidth="1" opacity="0.5" />
-                    <text x="50%" y="44%" textAnchor="middle" dominantBaseline="middle" fill="#D4A73A" fontSize="8" fontWeight="700" fontFamily="Montserrat, sans-serif">№1</text>
-                    <text x="50%" y="58%" textAnchor="middle" dominantBaseline="middle" fill="#D4A73A" fontSize="5" fontFamily="Montserrat, sans-serif">ПЕРЕВОДЫ</text>
-                  </svg>
+            {/* ── Story card — replace the existing &__story-visual div ── */}
+          <div className="about-page__story-visual">
+            <div className="about-page__story-card">
+
+              {/* Header */}
+              <div className="about-page__story-card-header">
+                <span className="about-page__story-badge" >
+                  {t('about.story.badge')}
+                </span>
+                <div className="about-page__story-reg">
+                  <span className="about-page__story-reg-label">{t('about.story.regLabel')}</span>
+                  <span className="about-page__story-reg-num">006566-11</span>
                 </div>
               </div>
+
+              {/* Divider */}
+              <div className="about-page__story-divider" />
+
+              {/* Company name */}
+              <div className="about-page__story-company">
+                <span className="about-page__story-company-label">{t('about.story.companyLabel')}</span>
+                <strong>"PEREVODI N1" MCHJ</strong>
+              </div>
+
+              {/* Stats row */}
+              <div className="about-page__story-stats">
+                <div className="about-page__story-stat">
+                  <span className="about-page__story-stat-value">5 000+</span>
+                  <span className="about-page__story-stat-label">{t('about.stats.clients')}</span>
+                </div>
+                <div className="about-page__story-stat-divider" />
+                <div className="about-page__story-stat">
+                  <span className="about-page__story-stat-value">50+</span>
+                  <span className="about-page__story-stat-label">{t('about.stats.countries')}</span>
+                </div>
+                <div className="about-page__story-stat-divider" />
+                <div className="about-page__story-stat">
+                  <span className="about-page__story-stat-value">20 000+</span>
+                  <span className="about-page__story-stat-label">{t('about.stats.docs')}</span>
+                </div>
+              </div>
+
+              {/* Divider */}
+              <div className="about-page__story-divider" />
+
+              {/* Meta info */}
+              <div className="about-page__story-meta">
+                <div className="about-page__story-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/>
+                  </svg>
+                  <span>Toshkent, Yakkasaroy tumani</span>
+                </div>
+                <div className="about-page__story-meta-item">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                  </svg>
+                  <span>STIR: 302 252 999</span>
+                </div>
+              </div>
+
+              {/* Certificate link button */}
+              <a
+                href="https://new.birdarcha.uz/document/af4c7eb5-b0a0-4c03-b54b-84845f6df8b8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="about-page__story-cert-btn"
+              >
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/>
+                </svg>
+                {t('about.story.certBtn')}
+              </a>
+
+              {/* Stamp */}
+              <div className="about-page__story-stamp">
+                <svg viewBox="0 0 80 80" fill="none">
+                  <circle cx="40" cy="40" r="38" stroke="#D4A73A" strokeWidth="1.5" strokeDasharray="4 2"/>
+                  <circle cx="40" cy="40" r="30" stroke="#D4A73A" strokeWidth="1" opacity="0.5"/>
+                  <text x="50%" y="44%" textAnchor="middle" dominantBaseline="middle" fill="#D4A73A" fontSize="8" fontWeight="700" fontFamily="Montserrat, sans-serif">№1</text>
+                  <text x="50%" y="58%" textAnchor="middle" dominantBaseline="middle" fill="#D4A73A" fontSize="5" fontFamily="Montserrat, sans-serif">ПЕРЕВОДЫ</text>
+                </svg>
+              </div>
+
             </div>
+          </div>
           </div>
         </div>
       </section>
@@ -135,6 +201,49 @@ export default function AboutPage() {
                 <p>{t(`about.values.items.${val.key}.desc`)}</p>
               </div>
             ))}
+          </div>
+          <div className="about-page__payments">
+            <h3 className="about-page__payments-title">{t('about.payments.title')}</h3>
+            <div className="about-page__payments-grid">
+        
+              <div className="about-page__payment-card">
+                <div className="about-page__payment-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6" />
+                  </svg>
+                </div>
+                <span>{t('about.payments.cash')}</span>
+              </div>
+        
+              <div className="about-page__payment-card">
+                <div className="about-page__payment-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+                    <path d="M1 10h22"/>
+                  </svg>
+                </div>
+                <span>{t('about.payments.terminal')}</span>
+              </div>
+        
+              <div className="about-page__payment-card">
+                <div className="about-page__payment-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <path d="M3 12h18M3 12l4-4M3 12l4 4M21 12l-4-4M21 12l-4 4"/>
+                  </svg>
+                </div>
+                <span>{t('about.payments.transfer')}</span>
+              </div>
+        
+              <div className="about-page__payment-card">
+                <div className="about-page__payment-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                    <path d="M18 20V10M12 20V4M6 20v-6"/>
+                  </svg>
+                </div>
+                <span>{t('about.payments.exchange')}</span>
+              </div>
+        
+            </div>
           </div>
         </div>
       </section>

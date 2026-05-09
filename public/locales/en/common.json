@@ -183,12 +183,22 @@
       "countries": "Countries",
       "docs": "Documents completed"
     },
+    "payments": {
+      "title": "Payment Methods",
+      "cash": "Cash payment",
+      "terminal": "Terminal payment",
+      "transfer": "Bank transfer",
+      "exchange": "Exchange-based payment"
+    },
     "story": {
       "eyebrow": "Our Story",
       "title": "How We Started",
       "p1": "Переводы №1 was founded in Tashkent over 16 years ago. Since then, we have helped thousands of clients translate and certify their documents.",
       "p2": "Today we are one of the most trusted translation services in Central Asia. An individual approach to every document, confidentiality and quality guarantee — these are our core principles.",
-      "badge": "Since 2010"
+      "badge": "Since 2010",
+      "regLabel": "Registration number",
+      "companyLabel": "Company name",
+      "certBtn": "View official certificate"
     },
     "values": {
       "eyebrow": "Our Values",

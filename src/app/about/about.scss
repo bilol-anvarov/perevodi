@@ -175,15 +175,12 @@
     border-radius: 6px;
     padding: 6px 14px;
     align-self: flex-start;
-
-    span {
-      font-family: $f-heading;
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: $gold;
-    }
+    font-family: $f-heading;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: $gold;
   }
 
   &__story-lines {
@@ -400,5 +397,253 @@
     gap: 16px;
     justify-content: center;
     flex-wrap: wrap;
+  }
+  // ── Add these styles inside .about-page in your about.scss ──
+
+  &__story-card-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  &__story-reg {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 2px;
+  }
+
+  &__story-reg-label {
+    font-family: $f-heading;
+    font-size: 0.55rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba($white, 0.35);
+  }
+
+  &__story-reg-num {
+    font-family: $f-heading;
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: rgba($gold, 0.8);
+    letter-spacing: 0.08em;
+  }
+
+  &__story-divider {
+    height: 1px;
+    background: rgba($white, 0.08);
+    width: 100%;
+  }
+
+  &__story-company {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    span {
+      font-family: $f-heading;
+      font-size: 0.6rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: rgba($white, 0.35);
+    }
+
+    strong {
+      font-family: $f-heading;
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: $white;
+      letter-spacing: 0.06em;
+    }
+  }
+
+  &__story-stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  &__story-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    flex: 1;
+  }
+
+  &__story-stat-value {
+    font-family: $f-heading;
+    font-size: 1.1rem;
+    font-weight: 800;
+    color: $gold;
+    line-height: 1;
+  }
+
+  &__story-stat-label {
+    font-family: $f-body;
+    font-size: 0.65rem;
+    color: rgba($white, 0.45);
+    text-align: center;
+    line-height: 1.3;
+  }
+
+  &__story-stat-divider {
+    width: 1px;
+    height: 32px;
+    background: rgba($white, 0.1);
+    flex-shrink: 0;
+  }
+
+  &__story-meta {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__story-meta-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    svg {
+      width: 14px;
+      height: 14px;
+      stroke: rgba($gold, 0.6);
+      flex-shrink: 0;
+    }
+
+    span {
+      font-family: $f-body;
+      font-size: 0.78rem;
+      color: rgba($white, 0.5);
+    }
+  }
+
+  &__story-cert-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px 16px;
+    border-radius: var(--radius-sm);
+    border: 1px solid rgba($gold, 0.4);
+    background: rgba($gold, 0.08);
+    color: $gold;
+    font-family: $f-heading;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.25s ease, border-color 0.25s ease;
+    cursor: pointer;
+
+    svg {
+      width: 15px;
+      height: 15px;
+      stroke: $gold;
+      flex-shrink: 0;
+    }
+
+    &:hover {
+      background: rgba($gold, 0.16);
+      border-color: $gold;
+      color: $gold;
+    }
+  }
+
+  &__story-stamp {
+    align-self: flex-end;
+
+    svg {
+      width: 70px;
+      height: 70px;
+    }
+  }
+  // ── Add inside .about-page { } in about.scss ──
+
+  &__payments {
+    margin-top: 48px;
+    padding-top: 40px;
+    border-top: 1px solid $border-color;
+  }
+
+  &__payments-title {
+    font-family: $f-heading;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: $muted-text;
+    margin: 0 0 20px;
+    text-align: center;
+  }
+
+  &__payments-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+
+    @media (max-width: $bp-lg) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: $bp-sm) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  &__payment-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding: 24px 16px;
+    background: $white;
+    border: 1px solid $border-color;
+    border-radius: var(--radius-md);
+    transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+
+    &:hover {
+      border-color: rgba($gold, 0.4);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-sm);
+    }
+
+    span {
+      font-family: $f-heading;
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: $navy;
+      text-align: center;
+      line-height: 1.3;
+    }
+  }
+
+  &__payment-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: rgba($navy, 0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.25s ease;
+
+    svg {
+      width: 22px;
+      height: 22px;
+      stroke: $navy;
+      transition: stroke 0.25s ease;
+    }
+
+    .about-page__payment-card:hover & {
+      background-color: $navy;
+      svg { stroke: $gold; }
+    }
   }
 }

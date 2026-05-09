@@ -188,7 +188,10 @@
       "title": "Biz qanday boshladik",
       "p1": "Переводы №1 kompaniyasi 16 yildan ortiq muqaddam Toshkentda tashkil etilgan. O'sha paytdan boshlab biz minglab mijozlarga hujjatlarini rasmiylashtirish va tarjima qilishda yordam berdik.",
       "p2": "Bugun biz Markaziy Osiyodagi eng ishonchli tarjimonlik xizmatlaridan biri hisoblanamiz. Har bir hujjatga individual yondashuv, maxfiylik va sifat kafolati — bu bizning asosiy tamoyillarimiz.",
-      "badge": "2010 yildan beri"
+      "badge": "2010 yildan beri",
+      "regLabel": "Ro'yxat raqami",
+      "companyLabel": "Kompaniya nomi",
+      "certBtn": "Rasmiy guvohnomani ko'rish"     
     },
     "values": {
       "eyebrow": "Bizning qadriyatlar",
@@ -238,6 +241,13 @@
       "desc": "Bugun biz bilan bog'laning va bepul konsultatsiya oling.",
       "btn1": "Ariza qoldirish",
       "btn2": "Xizmatlar"
+    },
+    "payments": {
+      "title": "To'lov usullari",
+      "cash": "Naqd to'lov",
+      "terminal": "Terminal orqali to'lov",
+      "transfer": "Pul o'tkazma",
+      "exchange": "Birja orqali to'lov"
     }
   },
   "contactPage": {
