@@ -13,17 +13,29 @@ export const metadata = {
   keywords: [
     "переводы Ташкент",
     "апостиль Ташкент",
-    "легализация документов",
-    "нотариальный перевод",
+    "легализация документов Ташкент",
+    "нотариальный перевод Ташкент",
+    "перевод документов Узбекистан",
+    "бюро переводов Ташкент",
+    "апостиль на диплом Ташкент",
+    "заверенный перевод",
+    "перевод паспорта Ташкент",
     "tarjima xizmati Toshkent",
     "apostil Toshkent",
+    "hujjat tarjimasi",
+    "notarial tasdiqlash Toshkent",
+    "legalizatsiya Toshkent",
+    "shaxsiy hujjatlar tarjimasi",
     "translation services Tashkent",
-    "перевод документов Узбекистан",
+    "apostille Tashkent",
+    "document legalization Uzbekistan",
+    "certified translation Tashkent",
+    "notarized translation Uzbekistan",
   ],
   authors: [{ name: "Переводы №1" }],
   creator: "Переводы №1",
   publisher: "Переводы №1",
-  metadataBase: new URL("https://perevodi1.uz"),
+  metadataBase: new URL("https://perevodin1.uz"),
   alternates: {
     canonical: "/",
     languages: {
@@ -34,7 +46,7 @@ export const metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://perevodi1.uz",
+    url: "https://perevodin1.uz",
     siteName: "Переводы №1",
     title: "Переводы №1 — Апостиль, Легализация, Переводы документов",
     description:
@@ -43,7 +55,7 @@ export const metadata = {
     alternateLocale: ["uz_UZ", "en_US"],
     images: [
       {
-        url: "/og-image.png", // add a 1200x630 branded image to /public
+        url: "https://perevodin1.uz/og-image.png",
         width: 1200,
         height: 630,
         alt: "Переводы №1 — Ташкент",
@@ -55,7 +67,7 @@ export const metadata = {
     title: "Переводы №1 — Апостиль, Легализация, Переводы документов",
     description:
       "Профессиональные услуги перевода документов в Ташкенте. Быстро, точно, надёжно.",
-    images: ["/og-image.png"],
+    images: ["https://perevodin1.uz/og-image.png"],
   },
   robots: {
     index: true,
@@ -73,7 +85,7 @@ export const metadata = {
     apple: "/apple-touch-icon.png",
   },
   verification: {
-    // google: "your-google-search-console-token", // add when ready
+    google: "xpE-AbBKyyrQUuOticoUbbxthdAyhk363r73TCRMMWU",
   },
 };
 
@@ -83,9 +95,7 @@ export default function RootLayout({ children }) {
       <body>
         <MainContextProvider>
           <Header />
-          <div id="root">
-            {children}
-          </div>
+          <div id="root">{children}</div>
           <Footer />
         </MainContextProvider>
       </body>

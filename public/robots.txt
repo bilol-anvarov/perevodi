@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://perevodi1.uz/sitemap.xml
+Sitemap: https://perevodin1.uz/sitemap.xml
