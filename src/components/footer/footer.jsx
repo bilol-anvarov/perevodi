@@ -1,26 +1,26 @@
-'use client'
-import Link from 'next/link';
-import { useTranslation } from 'react-i18next';
-import './footer.scss';
+"use client";
+import Link from "next/link";
+import { useTranslation } from "react-i18next";
+import "./footer.scss";
 
 export default function Footer() {
   const { t } = useTranslation();
 
   const navLinks = [
-    { key: 'home',     src: '/' },
-    { key: 'services', src: '/services' },
-    { key: 'about',    src: '/about' },
-    { key: 'contact',  src: '/contact' },
+    { key: "home", src: "/" },
+    { key: "services", src: "/services" },
+    { key: "about", src: "/about" },
+    { key: "contact", src: "/contact" },
   ];
 
   const services = [
-    'apostille',
-    'legalization',
-    'translation',
-    'notarial',
-    'personal',
-    'medical',
-    'consultation',
+    "apostille",
+    "legalization",
+    "translation",
+    "notarial",
+    "personal",
+    "medical",
+    "consultation",
   ];
 
   return (
@@ -28,16 +28,15 @@ export default function Footer() {
       <div className="footer__top">
         <div className="container">
           <div className="footer__grid">
-
             {/* ── Col 1: Brand ── */}
             <div className="footer__col footer__col--brand">
               <Link href="/" className="footer__logo">
                 <img src="/logo.png" alt="Переводы №1" />
               </Link>
-              <p className="footer__tagline">{t('footer.tagline')}</p>
+              <p className="footer__tagline">{t("footer.tagline")}</p>
               <div className="footer__socials">
                 <a
-                  href="https://t.me/perevodi1"
+                  href="https://t.me/+998909620082"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="footer__social"
@@ -63,7 +62,12 @@ export default function Footer() {
                   className="footer__social"
                   aria-label="Phone"
                 >
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
                     <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
                   </svg>
                 </a>
@@ -72,13 +76,11 @@ export default function Footer() {
 
             {/* ── Col 2: Nav ── */}
             <div className="footer__col">
-              <h4 className="footer__col-title">{t('footer.nav')}</h4>
+              <h4 className="footer__col-title">{t("footer.nav")}</h4>
               <ul className="footer__links">
                 {navLinks.map((link) => (
                   <li key={link.key}>
-                    <Link href={link.src}>
-                      {t(`nav.${link.key}`)}
-                    </Link>
+                    <Link href={link.src}>{t(`nav.${link.key}`)}</Link>
                   </li>
                 ))}
               </ul>
@@ -86,7 +88,7 @@ export default function Footer() {
 
             {/* ── Col 3: Services ── */}
             <div className="footer__col">
-              <h4 className="footer__col-title">{t('footer.services')}</h4>
+              <h4 className="footer__col-title">{t("footer.services")}</h4>
               <ul className="footer__links">
                 {services.map((key) => (
                   <li key={key}>
@@ -100,44 +102,70 @@ export default function Footer() {
 
             {/* ── Col 4: Contact ── */}
             <div className="footer__col">
-              <h4 className="footer__col-title">{t('footer.contact')}</h4>
+              <h4 className="footer__col-title">{t("footer.contact")}</h4>
               <ul className="footer__contact-list">
                 <li>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  >
                     <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
                   </svg>
                   <a href="tel:+998909620082">+998 90 962-00-82</a>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  >
                     <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10.8a19.79 19.79 0 01-3.07-8.67A2 2 0 012 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z" />
                   </svg>
                   <a href="tel:+998909006030">+998 90 900-60-30</a>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  >
                     <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
                     <polyline points="22,6 12,13 2,6" />
                   </svg>
-                  <a href="mailto:bestperevodi1@mail.ru">bestperevodi1@mail.ru</a>
+                  <a href="mailto:bestperevodi1@mail.ru">
+                    bestperevodi1@mail.ru
+                  </a>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  >
                     <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
                     <circle cx="12" cy="10" r="3" />
                   </svg>
-                  <span>{t('footer.address')}</span>
+                  <span>{t("footer.address")}</span>
                 </li>
                 <li>
-                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  >
                     <circle cx="12" cy="12" r="10" />
                     <path d="M12 6v6l4 2" />
                   </svg>
-                  <span>{t('footer.hours')}</span>
+                  <span>{t("footer.hours")}</span>
                 </li>
               </ul>
             </div>
-
           </div>
         </div>
       </div>
@@ -146,10 +174,10 @@ export default function Footer() {
       <div className="footer__bottom">
         <div className="container">
           <p className="footer__copy">
-            © {new Date().getFullYear()} {t('footer.copy')}
+            © {new Date().getFullYear()} {t("footer.copy")}
           </p>
           <p className="footer__copy footer__copy--right">
-            {t('footer.office')}
+            {t("footer.office")}
           </p>
         </div>
       </div>
