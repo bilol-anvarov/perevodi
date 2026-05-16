@@ -35,9 +35,9 @@ export const metadata = {
   authors: [{ name: "Переводы №1" }],
   creator: "Переводы №1",
   publisher: "Переводы №1",
-  metadataBase: new URL("https://perevodin1.uz"),
+  metadataBase: new URL("https://www.perevodin1.uz"),
   alternates: {
-    canonical: "/",
+    canonical: "https://www.perevodin1.uz/",
     languages: {
       "uz-UZ": "/uz",
       "ru-RU": "/ru",
@@ -46,7 +46,7 @@ export const metadata = {
   },
   openGraph: {
     type: "website",
-    url: "https://perevodin1.uz",
+    url: "https://www.perevodin1.uz",
     siteName: "Переводы №1",
     title: "Переводы №1 — Апостиль, Легализация, Переводы документов",
     description:
@@ -55,7 +55,7 @@ export const metadata = {
     alternateLocale: ["uz_UZ", "en_US"],
     images: [
       {
-        url: "https://perevodin1.uz/og-image.png",
+        url: "https://www.perevodin1.uz/og-image.png",
         width: 1200,
         height: 630,
         alt: "Переводы №1 — Ташкент",
@@ -67,7 +67,7 @@ export const metadata = {
     title: "Переводы №1 — Апостиль, Легализация, Переводы документов",
     description:
       "Профессиональные услуги перевода документов в Ташкенте. Быстро, точно, надёжно.",
-    images: ["https://perevodin1.uz/og-image.png"],
+    images: ["https://www.perevodin1.uz/og-image.png"],
   },
   robots: {
     index: true,
@@ -94,7 +94,7 @@ export default function RootLayout({ children }) {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Переводы №1",
-    "url": "https://perevodin1.uz",
+    "url": "https://www.perevodin1.uz",
     "telephone": "+998909620082",
     "address": {
       "@type": "PostalAddress",
