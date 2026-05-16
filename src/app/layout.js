@@ -90,9 +90,32 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Переводы №1",
+    "url": "https://perevodin1.uz",
+    "telephone": "+998909620082",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Nukus ko'chasi 46, Ideal Business Center, 2-qavat, 201-xona",
+      "addressLocality": "Toshkent",
+      "addressCountry": "UZ"
+    },
+    "openingHours": "Mo-Sa 09:00-18:00",
+    "description": "Профессиональные услуги перевода документов в Ташкенте. Апостиль, легализация, нотариальные переводы.",
+    "priceRange": "$$",
+    "sameAs": [
+      "https://t.me/perevodin1"
+    ]
+  };
   return (
     <html lang="ru" suppressHydrationWarning>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <MainContextProvider>
           <Header />
           <div id="root">{children}</div>
