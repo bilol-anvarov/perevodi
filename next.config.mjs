@@ -7,6 +7,16 @@ const nextConfig = {
   images: {
     domains: ['', ''],
   },
+  async redirects() {
+    return [
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'perevodin1.uz' }],
+        destination: 'https://www.perevodin1.uz/:path*',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
