@@ -5,7 +5,7 @@ import Link from "next/link";
 import "./Contact.scss";
 import Image from "next/image";
 
-const TELEGRAM_BOT_TOKEN = "8206552530:AAGEpigXIY1vzYk8Nig1frvLrc2k7Tr8R3s";
+const TELEGRAM_BOT_TOKEN = "8994379608:AAE1uqRNMNSx7ixb-I1HdSZxaFGCMhz5FPA";
 const TELEGRAM_CHAT_ID = "-1003967202673";
 
 const SERVICES_KEYS = [
